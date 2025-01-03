@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-
+from predict import predict_audio_class
 
 st.set_page_config(layout="wide")
 
@@ -103,24 +103,9 @@ with tab3:
     with col2:
         st.image("upload.png")
     uploaded_file = st.file_uploader("Choose a file")
-    if uploaded_file is not None:
-        # To read file as bytes:
-        bytes_data = uploaded_file.getvalue()
-        st.write(bytes_data)
-
-        # To convert to a string based IO:
-        stringio = StringIO(uploaded_file.getvalue().decode("utf-8"))
-        st.write(stringio)
-
-        # To read file as string:
-        string_data = stringio.read()
-        st.write(string_data)
-
-        # Can be used wherever a "file-like" object is accepted:
-        dataframe = pd.read_csv(uploaded_file)
-        st.write(dataframe)
-
-    st.button("Analyze")
+    if st.button("Analyze"):
+        prediction = predict_audio_class(uploaded_file)
+        st.write(prediction)
 
     hi1, hi2 = st.columns(2)
     with hi1:
