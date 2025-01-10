@@ -95,7 +95,7 @@ with tab2:
     with col2:
         st.image("library.png")
 
-	st.subheader("Select one of the 72 Melakartha ragams")
+        st.subheader("Select one of the 72 Melakartha ragams")
 	option = st.selectbox(
 	    "",
 	("Kanakangi", "Ratnangi", "Ganamurti", "Vanaspati", "Manavati",  
