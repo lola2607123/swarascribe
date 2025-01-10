@@ -119,7 +119,7 @@ with tab2:
 
 
 with tab3:
-	col1, col2, col3 = st.columns(3)
+    col1, col2, col3 = st.columns(3)
 
     with col2:
         st.image("upload.png")
