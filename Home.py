@@ -96,7 +96,7 @@ with tab2:
         st.image("library.png")
 
         st.subheader("Select one of the 72 Melakartha ragams")
-	option = st.selectbox(
+        option = st.selectbox(
 	    "",
 	("Kanakangi", "Ratnangi", "Ganamurti", "Vanaspati", "Manavati",  
 	"Tanarupi", "Senavati", "Hanumatodi", "Dhenuka", "Natakapriya",  
