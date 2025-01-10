@@ -89,34 +89,33 @@ with tab1:
 
 
 
-
 with tab2:
     col1, col2, col3 = st.columns(3)
 
     with col2:
         st.image("library.png")
 
-	    st.subheader("Select one of the 72 Melakartha ragams")
-	    option = st.selectbox(
+	st.subheader("Select one of the 72 Melakartha ragams")
+	option = st.selectbox(
 	    "",
-	("Kanakangi", "Ratnangi", "Ganamurti", "Vanaspati", "Manavati",  
-	"Tanarupi", "Senavati", "Hanumatodi", "Dhenuka", "Natakapriya",  
-	"Kokilapriya", "Rupavati", "Gayakapriya", "Vakulabharanam", "Mayamalavagowla",  
-	"Chakravakam", "Suryakantam", "Hatakambari", "Jhankaradhwani", "Natabhairavi",  
-	"Keeravani", "Kharaharapriya", "Gourimanohari", "Varunapriya", "Mararanjani",  
-	"Charukesi", "Sarasangi", "Harikambhoji", "Dheerasankarabaranam", "Naganandini",  
-	"Yagapriya", "Ragavardhini", "Gangeyabhushani", "Vagadheeswari", "Shulini",  
-	"Chalanata", "Salagam", "Jalarnavam", "Jhalavarali", "Navaneetam",  
-	"Pavani", "Raghupriya", "Gavambhodi", "Bhavapriya", "Shubhapantuvarali",  
-	"Shadvidamargini", "Suvarnangi", "Divyamani", "Dhavalambari", "Namanarayani",  
-	"Kamavardhini", "Ramapriya", "Gamanashrama", "Vishwambari", "Shamalangi",  
-	"Shanmukhapriya", "Simhendramadhyamam", "Hemavati", "Dharmavati", "Neetimati",  
-	"Kantamani", "Rishabhapriya", "Latangi", "Vachaspati", "Mechakalyani",  
-	"Chitrambari", "Sucharitra", "Jyoti swarupini", "Dhatuvardani", "Nasikabhushini",  
-	"Kosalam", "Rasikapriya"))
+("Kanakangi", "Ratnangi", "Ganamurti", "Vanaspati", "Manavati",  
+"Tanarupi", "Senavati", "Hanumatodi", "Dhenuka", "Natakapriya",  
+"Kokilapriya", "Rupavati", "Gayakapriya", "Vakulabharanam", "Mayamalavagowla",  
+"Chakravakam", "Suryakantam", "Hatakambari", "Jhankaradhwani", "Natabhairavi",  
+"Keeravani", "Kharaharapriya", "Gourimanohari", "Varunapriya", "Mararanjani",  
+"Charukesi", "Sarasangi", "Harikambhoji", "Dheerasankarabaranam", "Naganandini",  
+"Yagapriya", "Ragavardhini", "Gangeyabhushani", "Vagadheeswari", "Shulini",  
+"Chalanata", "Salagam", "Jalarnavam", "Jhalavarali", "Navaneetam",  
+"Pavani", "Raghupriya", "Gavambhodi", "Bhavapriya", "Shubhapantuvarali",  
+"Shadvidamargini", "Suvarnangi", "Divyamani", "Dhavalambari", "Namanarayani",  
+"Kamavardhini", "Ramapriya", "Gamanashrama", "Vishwambari", "Shamalangi",  
+"Shanmukhapriya", "Simhendramadhyamam", "Hemavati", "Dharmavati", "Neetimati",  
+"Kantamani", "Rishabhapriya", "Latangi", "Vachaspati", "Mechakalyani",  
+"Chitrambari", "Sucharitra", "Jyoti swarupini", "Dhatuvardani", "Nasikabhushini",  
+"Kosalam", "Rasikapriya"))
 	
 	
-	    st.subheader("You selected:", option)
+st.subheader("You selected:", option)
 
 
 with tab3:
