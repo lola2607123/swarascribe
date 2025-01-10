@@ -256,7 +256,7 @@ with tab3:
 	st.subheader("Charanam:")
 	 
 	st.markdown('''P&nbsp; &nbsp;  ,&nbsp; &nbsp;   P&nbsp; &nbsp; ,&nbsp; &nbsp;     	,&nbsp; &nbsp;  D&nbsp; &nbsp; P &nbsp; &nbsp;M&nbsp; &nbsp;       	P&nbsp; &nbsp; D&nbsp; &nbsp; ,&nbsp; &nbsp;  P&nbsp; &nbsp;   	D&nbsp; &nbsp; ,&nbsp; &nbsp;  D&nbsp; &nbsp; R&nbsp; &nbsp;  ||&nbsp; &nbsp;N &nbsp; &nbsp; ,&nbsp; &nbsp; N&nbsp; &nbsp;  ,&nbsp; &nbsp;     	D&nbsp; &nbsp; ,&nbsp; &nbsp;   P&nbsp; &nbsp;  ,&nbsp; &nbsp;    |   	&nbsp; &nbsp;M &nbsp; &nbsp;R &nbsp; &nbsp;G &nbsp; &nbsp;, &nbsp; &nbsp;  	R&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; M&nbsp; &nbsp; ||   |\n\n
-	Pa -   lu -   	-  ku -  -        	-   -  -  -    	-  -   -  -|Mu - - -      	-  -   -  -        	na -  -  -   	tho - -  -|\n\n''')
+	Pa -&nbsp;&nbsp;&nbsp;   lu -   &nbsp;&nbsp;&nbsp;	- &nbsp;&nbsp; ku - &nbsp;&nbsp; -   &nbsp;&nbsp;     	-  &nbsp;&nbsp;&nbsp; -  -&nbsp;&nbsp;&nbsp;  -    &nbsp;&nbsp;&nbsp;&nbsp;	-  -   -  -&nbsp;&nbsp;|Mu -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - -      	- &nbsp;&nbsp; - &nbsp;  -  -  &nbsp;&nbsp;      	na - &nbsp;&nbsp; - &nbsp;&nbsp; -   &nbsp;&nbsp;&nbsp;	tho&nbsp; -&nbsp;&nbsp; - &nbsp; -&nbsp;&nbsp;|\n\n''')
 	 
 	st.subheader("Chittai Swaram:")
 	 
