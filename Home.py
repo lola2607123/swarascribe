@@ -205,7 +205,7 @@ with tab3:
 
         st.header("CHALAMELA")
  
-	st.markdown('''Ragam: Durbar (22nd Mela Janyam)
+        st.markdown('''Ragam: Durbar (22nd Mela Janyam)
 	Talam: Adi
 	 
 	Arohanam:          S R2 M1 P D2 N2 S            	||
