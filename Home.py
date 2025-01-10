@@ -116,7 +116,7 @@ with tab2:
 "Kosalam", "Rasikapriya"))
 
 
-    st.write("You selected:", option)
+    st.subheader("You selected:", option)
 
 
 with tab3:
