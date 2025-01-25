@@ -122,85 +122,88 @@ with tab2:
 "Harikambhoji", "Mukhari", "Ranjani", "Kapi", "Simhavahini"  
 ))
 	
-	
+
         st.subheader("You selected:", option)
-hi1, hi2 = st.columns(2)
+		    	
+if "option"=="Shankarabharanam" or "Dheerashankarabharanam":
+	
+	hi1, hi2 = st.columns(2)
 
-with hi1:
-    st.title("This song is in the ragam: Shankarabharanam")
-    st.write('''
-    **Shankarabharanam** is a major raga in Carnatic music, known for its auspicious and uplifting quality.  
-    It corresponds to the Western major scale and serves as a **Melakarta raga** (29th in the system), meaning it is a parent raga from which other ragas are derived.  
-
-    **Arohana**: S R₂ G₃ M₁ P D₂ N₃ Ṡ  
-    **Avarohana**: Ṡ N₃ D₂ P M₁ G₃ R₂ S  
-
-    **Musical Structure**:  
-    - Shankarabharanam is a **Sampurna raga**, containing all seven notes in both ascending (arohana) and descending (avarohana) scales.  
-    - The notes used are Shadjam (**S**), Chatushruti Rishabham (**R₂**), Antara Gandharam (**G₃**), Shuddha Madhyamam (**M₁**), Paṅchamam (**P**), Chatushruti Dhaivatam (**D₂**), and Kakali Nishadam (**N₃**).  
-    - It is the **Shuddha Madhyamam equivalent** of the 65th Melakarta raga, Kaḷyāṇi.  
-    - In Hindustani music, Shankarabharanam corresponds to **Bilaval**, while in Western music, it aligns with the **major scale**, making it widely recognized across musical traditions.  
-    ''')
-
-    st.markdown("""
-    **Popular Songs**:  
-    - "Endaro Mahanubhavulu" by Saint Tyagaraja  
-
-    **Janya Ragas**:  
-    Shankarabharanam has given rise to many Janya (derived) ragas, each bringing out different moods and interpretations.  
-    - **Arabhi**
-    - **Atana**
-    - **Bilahari**
-    - **Devagaandhaari**
-    - **Jana Ranjani**
-    - **Hamsadhvani**
-    - **Kadanakutuhalam**
-    - **Niroshta**
-    - **Shuddha Sāveri**
-    - **Pahādi**  
-    These Janya ragas add richness to the raga's expression, allowing for diverse musical exploration within the framework of Shankarabharanam.
-    """)
-
-    st.title("CHALAMELA")
-    st.markdown('''
-    **Ragam**: Durbar (22nd Mela Janyam)  
-    **Talam**: Adi  
-
-    **Arohanam**: S R₂ M₁ P D₂ N₂ S  
-    **Avarohanam**: S N₂ D₂ P M₁ R₂ G₂ G₂ R₂ S  
-
-    **Composer**: Thiruvotriyur Thyagaiyyer  
-    **Notation Courtesy**: Apoorva Raghunandan  
-
-    **Pallavi**:  
-    ChalamEla jEsEvurA chAla nammina nApai  
-
-    **Anupallavi**:  
-    Valachiyunna nAthO vAdEla VEnu gOpAla dEva  
-
-    **Charanam**:  
-    Palukumu nAthO  
-
-    **Meaning**:  
-    Lord Venugopala, why do you wreak a grudge on me? Please shower your Grace upon this one who has ardently believed in you.  
-    ''')
-
-with hi2:
-    st.image("spec.png")
-    
-    st.title("Fun Facts About Shankarabharanam")
-    st.markdown("""
-    - **🧑‍🎤 King of Ragas**: Revered for its grandeur in Carnatic music.  
-    - **🎵 Melakarta Raga**: 29th in the 72 Melakarta system, under the Indu Chakra.  
-    - **🔢 Sampurna Scale**: Utilizes all seven notes in both ascending and descending orders.  
-    - **🎶 Vadi and Samvadi**: Vadi is P (Paṅchamam); Samvadi is S (Shadjam).  
-    - **🌅 Time of Performance**: Typically performed in the early evening.  
-    - **🎤 Famous Compositions**: Includes 'Vatapi Ganapatim' by Muthuswami Dikshitar.  
-    - **💎 Name Meaning**: Translates to 'the ornament of Shankara' (Lord Shiva).  
-    - **🎶 Hindustani Equivalent**: Yaman, sharing similar moods and structures.  
-    - **🩷 Emotional Range**: Expresses devotion, grandeur, and peace.  
-    - **🎻 Vocal and Instrumental**: Equally popular in both vocal and instrumental performances.
-    """)
+	with hi1:
+	    st.title("This song is in the ragam: Shankarabharanam")
+	    st.write('''
+	    **Shankarabharanam** is a major raga in Carnatic music, known for its auspicious and uplifting quality.  
+	    It corresponds to the Western major scale and serves as a **Melakarta raga** (29th in the system), meaning it is a parent raga from which other ragas are derived.  
+	
+	    **Arohana**: S R₂ G₃ M₁ P D₂ N₃ Ṡ  
+	    **Avarohana**: Ṡ N₃ D₂ P M₁ G₃ R₂ S  
+	
+	    **Musical Structure**:  
+	    - Shankarabharanam is a **Sampurna raga**, containing all seven notes in both ascending (arohana) and descending (avarohana) scales.  
+	    - The notes used are Shadjam (**S**), Chatushruti Rishabham (**R₂**), Antara Gandharam (**G₃**), Shuddha Madhyamam (**M₁**), Paṅchamam (**P**), Chatushruti Dhaivatam (**D₂**), and Kakali Nishadam (**N₃**).  
+	    - It is the **Shuddha Madhyamam equivalent** of the 65th Melakarta raga, Kaḷyāṇi.  
+	    - In Hindustani music, Shankarabharanam corresponds to **Bilaval**, while in Western music, it aligns with the **major scale**, making it widely recognized across musical traditions.  
+	    ''')
+	
+	    st.markdown("""
+	    **Popular Songs**:  
+	    - "Endaro Mahanubhavulu" by Saint Tyagaraja  
+	
+	    **Janya Ragas**:  
+	    Shankarabharanam has given rise to many Janya (derived) ragas, each bringing out different moods and interpretations.  
+	    - **Arabhi**
+	    - **Atana**
+	    - **Bilahari**
+	    - **Devagaandhaari**
+	    - **Jana Ranjani**
+	    - **Hamsadhvani**
+	    - **Kadanakutuhalam**
+	    - **Niroshta**
+	    - **Shuddha Sāveri**
+	    - **Pahādi**  
+	    These Janya ragas add richness to the raga's expression, allowing for diverse musical exploration within the framework of Shankarabharanam.
+	    """)
+	
+	    st.title("CHALAMELA")
+	    st.markdown('''
+	    **Ragam**: Durbar (22nd Mela Janyam)  
+	    **Talam**: Adi  
+	
+	    **Arohanam**: S R₂ M₁ P D₂ N₂ S  
+	    **Avarohanam**: S N₂ D₂ P M₁ R₂ G₂ G₂ R₂ S  
+	
+	    **Composer**: Thiruvotriyur Thyagaiyyer  
+	    **Notation Courtesy**: Apoorva Raghunandan  
+	
+	    **Pallavi**:  
+	    ChalamEla jEsEvurA chAla nammina nApai  
+	
+	    **Anupallavi**:  
+	    Valachiyunna nAthO vAdEla VEnu gOpAla dEva  
+	
+	    **Charanam**:  
+	    Palukumu nAthO  
+	
+	    **Meaning**:  
+	    Lord Venugopala, why do you wreak a grudge on me? Please shower your Grace upon this one who has ardently believed in you.  
+	    ''')
+	
+	with hi2:
+	    st.image("spec.png")
+	    
+	    st.title("Fun Facts About Shankarabharanam")
+	    st.markdown("""
+	    - **🧑‍🎤 King of Ragas**: Revered for its grandeur in Carnatic music.  
+	    - **🎵 Melakarta Raga**: 29th in the 72 Melakarta system, under the Indu Chakra.  
+	    - **🔢 Sampurna Scale**: Utilizes all seven notes in both ascending and descending orders.  
+	    - **🎶 Vadi and Samvadi**: Vadi is P (Paṅchamam); Samvadi is S (Shadjam).  
+	    - **🌅 Time of Performance**: Typically performed in the early evening.  
+	    - **🎤 Famous Compositions**: Includes 'Vatapi Ganapatim' by Muthuswami Dikshitar.  
+	    - **💎 Name Meaning**: Translates to 'the ornament of Shankara' (Lord Shiva).  
+	    - **🎶 Hindustani Equivalent**: Yaman, sharing similar moods and structures.  
+	    - **🩷 Emotional Range**: Expresses devotion, grandeur, and peace.  
+	    - **🎻 Vocal and Instrumental**: Equally popular in both vocal and instrumental performances.
+	    """)
 
 
 with tab3:
