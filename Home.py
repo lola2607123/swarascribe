@@ -123,14 +123,13 @@ with tab2:
 ))
 	
 
-        st.subheader("You selected:", option)
 		    	
 if option=="Shankarabharanam" or option=="Dheerasankarabaranam":
 	
 	hi1, hi2 = st.columns(2)
 
 	with hi1:
-	    st.title("This song is in the ragam: Shankarabharanam")
+	    st.title(option)
 	    st.write('''
 	    **Shankarabharanam** is a major raga in Carnatic music, known for its auspicious and uplifting quality.  
 	    It corresponds to the Western major scale and serves as a **Melakarta raga** (29th in the system), meaning it is a parent raga from which other ragas are derived.  
