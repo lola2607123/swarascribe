@@ -125,7 +125,7 @@ with tab2:
 
         st.subheader("You selected:", option)
 		    	
-if "option"=="Shankarabharanam" or "Dheerashankarabharanam":
+if option=="Shankarabharanam" or option=="Dheerashankarabharanam":
 	
 	hi1, hi2 = st.columns(2)
 
