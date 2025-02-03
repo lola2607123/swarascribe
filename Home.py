@@ -94,7 +94,24 @@ with tab2:
 
     with col2:
         st.image("library.png")
-
+raags = [
+  {
+    'name':'KANAKANGI',
+    'intro':'Kanakangi is the first melakarta rāgam in Carnatic music. It is a sampoorna rāgam, meaning it contains all seven swaras in both ascending (arohana) and descending (avarohana) scales. As a shuddha madhyamam rāgam, it serves as the parent scale for many derivative ragams. Known for its distinctive and austere sound, Kanakangi is rarely used in compositions but is valued for its theoretical significance in the melakarta system.',
+    'avarahana':'S R₁ G₁ M₁ P D₁ N₁ S',
+    'arohana':'S N₁ D₁ P M₁ G₁ R₁ S',
+    'tod': 'Early Morning',
+    'musical structure':'',
+    'history':'Kanakangi is the earliest raga in the Melakarta system of Carnatic music, forming the foundation of the entire raga structure. As the first raga in the 72 Melakarta system, Kanakangi holds a special place in classical music as the prototype for all subsequent ragas. Though there are no specific ancient compositions solely attributed to Kanakangi, its simplicity and natural beauty make it an ideal choice for beginner musicians as well as those seeking a serene atmosphere in their performances.
+The raga was likely developed and classified in the 19th century by the musicologist Venkatamakhi, who structured the 72 Melakarta ragas. Kanakangi's significance lies in its basic, uncomplicated structure, which allows musicians to explore the essential principles of melodic movement and tonal harmony without the complexity that later Melakartas introduce.',
+  },
+  {
+    'name':'Bhairavi',
+    'intro':'bhairavi was introduced in...',
+    'avarahana':'P G M',
+    'arohana':'P G M',
+  },
+]
         st.subheader("Select one of the 72 Melakartha ragams plus a few more!")
         option = st.selectbox(
 	    "",
