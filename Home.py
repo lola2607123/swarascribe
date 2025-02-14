@@ -237,7 +237,6 @@ with tab3:
         prediction = predict_audio_class(uploaded_file)
         st.write(prediction)
 
-if prediction=="Shankharabharanam":
 	hi1, hi2 = st.columns(2)
 	with hi1:
 	        st.title("This song is in the ragam: Shankharabharanam")
