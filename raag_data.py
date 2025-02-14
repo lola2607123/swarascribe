@@ -1,7 +1,6 @@
 raags = [
   {
     'name': 'Kanakangi',
-    'intro': 'Kanakangi is the first raga in the Melakarta system, marking the beginning of the 72 parent ragas in Carnatic music. It is a Sampurna raga, meaning it contains all seven notes in both ascending (Arohana) and descending (Avarohana) sequences. The raga is rarely performed in concerts but is highly significant for learners and musicologists.',
     'arohana': 'S R₁ G₁ M₁ P D₁ N₁ S',
     'avarohana': 'S N₁ D₁ P M₁ G₁ R₁ S',
     'time_of_day': 'Early Morning',
@@ -17,7 +16,6 @@ raags = [
   },
   {
     'name': 'Ratnangi',
-    'intro': 'Ratnangi is the second raga in the Melakarta system and serves as a natural progression from Kanakangi. It is a Sampurna raga, meaning it contains all seven notes in both ascending (Arohana) and descending (Avarohana) sequences. It blends sharp and natural notes, giving it a bright yet refined quality.',
     'arohana': 'S R₂ G₁ M₁ P D₂ N₁ S',
     'avarohana': 'S N₁ D₂ P M₁ G₁ R₂ S',
     'time_of_day': 'Early Morning',
@@ -32,7 +30,6 @@ raags = [
   },
   {
     'name': 'Shankarabharanam',
-    'intro': 'Shankarabharanam is the 29th Melakarta raga and one of the most foundational scales in Carnatic music. It is equivalent to the Western major scale and serves as a basis for many janya ragas.',
     'arohana': 'S R₂ G₃ M₁ P D₂ N₃ S',
     'avarohana': 'S N₃ D₂ P M₁ G₃ R₂ S',
     'time_of_day': 'Evening',
@@ -48,7 +45,6 @@ raags = [
   },
   {
     'name': 'Vanaspati',
-    'intro': 'Vanaspati is the fourth Melakarta raga and has a mysterious yet melodious quality. It is known for its unique swara combinations.',
     'arohana': 'S R₁ G₂ M₁ P D₁ N₂ S',
     'avarohana': 'S N₂ D₁ P M₁ G₂ R₁ S',
     'time_of_day': 'Late Morning',
@@ -63,7 +59,6 @@ raags = [
   },
   {
     'name': 'Manavati',
-    'intro': 'Manavati is the fifth Melakarta raga, known for its light yet slightly unconventional character.',
     'arohana': 'S R₁ G₂ M₁ P D₂ N₂ S',
     'avarohana': 'S N₂ D₂ P M₁ G₂ R₁ S',
     'time_of_day': 'Afternoon',
@@ -78,7 +73,6 @@ raags = [
   },
   {
     'name': 'Ganamurti',
-    'intro': 'Ganamurti is the third raga in the Melakarta system and is known for its structured, solemn, and introspective nature. It is a Sampurna raga, meaning it contains all seven notes in both ascending (Arohana) and descending (Avarohana) sequences. The raga has a stately quality that lends itself to devotional and philosophical themes.',
     'arohana': 'S R₁ G₃ M₁ P D₁ N₁ S',
     'avarohana': 'S N₁ D₁ P M₁ G₃ R₁ S',
     'time_of_day': 'Early Morning',
@@ -93,7 +87,6 @@ raags = [
   },
   {
     'name': 'Senavati',
-    'intro': 'Senavati is a Sampurna raga in the Melakarta system known for its harmonious and balanced tone. It features a combination of both sharp and natural notes, creating a melody that is both rich and serene. Senavati is a versatile raga, suitable for both light and classical compositions, and is often performed during the late morning or early afternoon hours.',
     'arohana': 'S R₂ G₃ M₁ P D₂ N₁ S',
     'avarohana': 'S N₁ D₂ P M₁ G₃ R₂ S',
     'time_of_day': 'Late Morning to Early Afternoon',
@@ -109,7 +102,6 @@ raags = [
  },
  {
     'name': 'Hanumatodi',
-    'intro': 'Hanumatodi is a profound and devotional raga in Carnatic music that exemplifies emotional depth and boldness. It is characterized by its intricate phrasing, preference for lower notes, and a strong connection to Lord Hanuman, inspiring reverence and devotion.',
     'arohana': 'S R₁ G₂ M₁ P D₁ N₂ Ṡ',
     'avarohana': 'Ṡ N₂ D₁ P M₁ G₂ R₁ S',
     'time_of_day': 'Early Morning',
@@ -129,7 +121,6 @@ raags = [
 
 {
     'name': 'Dhenuka',
-    'intro': 'Dhenuka is a serene and meditative raga in Carnatic music that fosters introspection and spiritual reflection. With its tranquil and solemn tone, it is closely associated with Lord Shiva, inspiring peace and divine connection.',
     'arohana': 'S R₁ G₃ M₁ P D₁ N₁ S',
     'avarohana': 'S N₁ D₁ P M₁ G₃ R₁ S',
     'time_of_day': 'Night',
@@ -143,7 +134,6 @@ raags = [
 },
 {
     'name': 'Natakapriya',
-    'intro': 'Natakapriya is a dramatic and evocative raga that conveys profound emotion and devotion. Its rich tonal quality makes it a unique choice for expressing a deep connection with Lord Vishnu, particularly in the morning hours.',
     'arohana': 'S R₁ G₂ M₁ P D₂ N₂ S',
     'avarohana': 'S N₂ D₂ P M₁ G₂ R₁ S',
     'time_of_day': 'Morning',
@@ -158,7 +148,6 @@ raags = [
 },
 {
     'name': 'Bhairavi',
-    'intro': 'Bhairavi is an ancient and deeply expressive raga that symbolizes devotion, pathos, and spiritual yearning. Its introspective and somber character has made it a timeless choice in Carnatic and Hindustani music traditions.',
     'arohana': 'S R₁ G₃ M₁ P D₁ N₃ Ṡ',
     'avarohana': 'Ṡ N₃ D₁ P M₁ G₃ R₁ S',
     'time_of_day': 'Early Morning or Late Evening',
@@ -221,63 +210,64 @@ raags = [
   "history": "Kharaharapriya is a major melakarta raga that has inspired many compositions in the Carnatic tradition. Composers like Tyagaraja have written some of their most celebrated works in this raga. Its ability to convey deep emotional states makes it an enduring and beloved raga in the Carnatic music tradition.",
   "cultural_significance": "Kharaharapriya is widely performed in both classical concerts and devotional music. Its deep emotional resonance and ability to convey longing and introspection make it a favorite for expressing themes of devotion and spirituality. The raga is often performed in the later parts of classical concerts, providing a profound emotional impact."
 },
- {
-  "name": "Todi",
-  "arohana": "S R₁ G₃ M₁ P D₁ N₃ S",
-  "avarohana": "S N₃ D₁ P M₁ G₃ R₁ S",
-  "time_of_day": "Morning",
-  "character": "Todi is a raga that is known for its intense and serious emotional depth. The raga conveys a sense of devotion, longing, and melancholy, evoking feelings of introspection and a connection to the divine. The use of Shuddha Rishabham (R₁), Antara Gandharam (G₃), and Kakali Nishadam (N₃) gives it a rich, resonant quality, while Shuddha Madhyamam (M₁) adds gravitas.",
-  "associated_deity_emotion": "Todi is often associated with Lord Shiva, evoking feelings of reverence, surrender, and devotion. It is believed to be a raga that expresses intense longing and devotion to the divine, often used in compositions that reflect spiritual yearning and deep emotional connection.",
-  "popular_compositions": [
-    "Vathapi Ganapathim - Muthuswami Dikshitar",
-    "Rama Nannu Brovara - Tyagaraja",
-    "Todi Varnam - Various Composers"
-  ],
-  "history": "Todi is an ancient and highly revered raga in Carnatic music. It is one of the melakarta ragas in the 72 melakarta system and has been a significant part of classical music for centuries. Its serious emotional depth and intricate structure have made it a favorite of both composers and performers, particularly in compositions that involve devotional themes.",
-  "cultural_significance": "Todi is considered one of the most important ragas in Carnatic music, frequently performed in both solo and group concerts. It is particularly significant in temple settings, where its emotional weight adds to the atmosphere of devotion and spirituality. Todi is used to express feelings of longing and devotion, especially in compositions that praise deities or explore themes of devotion."
- },
 {
-  "name": "Chakravakam",
-  "arohana": "S R₁ G₃ M₁ P D₂ N₂ S",
-  "avarohana": "S N₂ D₂ P M₁ G₃ R₁ S",
-  "time_of_day": "Morning",
-  "character": "Chakravakam is a raga that exudes compassion and warmth. Its soothing and melodious nature makes it ideal for compositions that convey love, empathy, and kindness. The raga creates a serene and uplifting atmosphere.",
-  "associated_deity_emotion": "Chakravakam is associated with Lord Surya (the Sun God), symbolizing vitality, compassion, and light. It inspires devotion and gratitude for the energy and life that the sun provides.",
-  "popular_compositions": [
-    "Sugunamule - Tyagaraja",
-    "Gajavadana - Papanasam Sivan"
-  ],
-  "history": "Chakravakam is the 16th melakarta raga in the 72 melakarta system. Its melodic appeal and emotional depth have made it a favorite among composers and performers.",
-  "cultural_significance": "Chakravakam is widely performed in Carnatic music, particularly in devotional and thematic concerts. Its ability to evoke empathy and warmth makes it a popular choice for compositions on divine love and universal compassion."
-},
-{
-  "name": "Mayamalavagowla",
-  "arohana": "S R₁ G₃ M₁ P D₁ N₃ S",
-  "avarohana": "S N₃ D₁ P M₁ G₃ R₁ S",
-  "time_of_day": "Morning",
-  "character": "Mayamalavagowla is a raga of symmetry and serenity. Known for its meditative and foundational nature, it is often used to teach beginners in Carnatic music. Its structure creates a mood of peace and devotion.",
-  "associated_deity_emotion": "Mayamalavagowla is associated with Lord Ganesha, symbolizing auspicious beginnings and guidance. It evokes feelings of devotion, simplicity, and clarity.",
-  "popular_compositions": [
-    "Deva Deva Kalayami - Swathi Thirunal",
-    "Meru Samana - Tyagaraja"
-  ],
-  "history": "Mayamalavagowla is the 15th melakarta raga in the 72 melakarta system. Its balanced and symmetrical structure has made it a cornerstone of Carnatic music, particularly in the teaching and learning process.",
-  "cultural_significance": "Mayamalavagowla is widely regarded as one of the most important ragas in Carnatic music. It is frequently performed in both educational and concert settings, highlighting its versatility and foundational role in classical music."
-},
-{
-  "name": "Kokilapriya",
-  "arohana": "S R₃ G₃ M₁ P D₃ N₃ S",
-  "avarohana": "S N₃ D₃ P M₁ G₃ R₃ S",
-  "time_of_day": "Morning",
-  "character": "Kokilapriya is a bright and cheerful raga that conveys joy and liveliness. The raga's structure imbues it with a playful and melodious quality, often reminiscent of the song of a koel (cuckoo). It evokes a sense of happiness and light-heartedness.",
-  "associated_deity_emotion": "Kokilapriya is associated with Lord Krishna, representing the playful and joyous aspects of divinity. It inspires feelings of bliss, celebration, and carefree devotion.",
-  "popular_compositions": [
-    "Kokilamukha Nandasuta - Koteeswara Iyer",
-    "Paripalaya Mam - Swathi Thirunal"
-  ],
-  "history": "Kokilapriya is the 11th melakarta raga in the 72 melakarta system. Its joyful and melodic nature has made it a versatile raga, often used to create a vibrant and lively atmosphere.",
-  "cultural_significance": "Kokilapriya is known for its cheerful and uplifting presence in Carnatic music. It is performed in a variety of settings, from temple concerts to festive gatherings, and is particularly loved for its ability to bring a sense of celebration and joy."
-},
+    "name": "Todi",
+    "arohana": "S R₁ G₃ M₁ P D₁ N₃ Ṡ",
+    "avarohana": "Ṡ N₃ D₁ P M₁ G₃ R₁ S",
+    "time_of_day": "Morning",
+    "character": "Todi is an intense and serious raga, often used to convey devotion, longing, and introspection. Its deep and meditative tone is created by the use of Shuddha Rishabham (R₁) and Shuddha Dhaivatham (D₁).",
+    "associated_deity_emotion": "Todi is associated with Lord Shiva and is believed to evoke feelings of reverence and spiritual yearning.",
+    "popular_compositions": [
+      "Kaddanu Variki - Tyagaraja",
+      "Vathapi Ganapathim - Muthuswami Dikshitar",
+      "Todi Varnam - Various composers"
+    ],
+    "history": "Todi is one of the oldest and most revered ragas in Carnatic music. It has been a favorite of composers like Tyagaraja and Dikshitar for its spiritual and emotional depth.",
+    "cultural_significance": "Todi holds a prominent place in classical performances, symbolizing introspection and devotion. It is often used in compositions expressing longing and divine connection."
+  },
+  {
+    "name": "Chakravakam",
+    "arohana": "S R₁ G₃ M₁ P D₂ N₂ Ṡ",
+    "avarohana": "Ṡ N₂ D₂ P M₁ G₃ R₁ S",
+    "time_of_day": "Morning",
+    "character": "Chakravakam is warm and soothing, evoking compassion and love. It is characterized by Chatusruti Dhaivatham (D₂) and Kaisiki Nishadam (N₂), creating a gentle and emotive sound.",
+    "associated_deity_emotion": "Chakravakam is associated with Lord Surya, symbolizing vitality and gratitude.",
+    "popular_compositions": [
+      "Sugunamule - Tyagaraja",
+      "Gajavadana - Papanasam Sivan"
+    ],
+    "history": "Chakravakam is the 16th melakarta raga and is loved for its emotional depth and simplicity. Its soothing nature has made it a preferred choice for both classical and devotional music.",
+    "cultural_significance": "Chakravakam is frequently performed in devotional themes, emphasizing empathy and love."
+  },
+  {
+    "name": "Mayamalavagowla",
+    "arohana": "S R₁ G₃ M₁ P D₁ N₃ Ṡ",
+    "avarohana": "Ṡ N₃ D₁ P M₁ G₃ R₁ S",
+    "time_of_day": "Morning",
+    "character": "Mayamalavagowla is serene and meditative, often taught as the foundational raga for beginners. Its symmetrical structure and tranquil tone make it ideal for learning swaras and basic compositions.",
+    "associated_deity_emotion": "Mayamalavagowla is associated with Lord Ganesha, symbolizing clarity and auspicious beginnings.",
+    "popular_compositions": [
+      "Deva Deva Kalayami - Swathi Thirunal",
+      "Meru Samana - Tyagaraja"
+    ],
+    "history": "Mayamalavagowla is the 15th melakarta raga and is a cornerstone of Carnatic music education. Its simplicity and emotional depth have inspired countless compositions.",
+    "cultural_significance": "This raga plays a crucial role in music education and performances, symbolizing clarity and meditative focus."
+  },
+  {
+    "name": "Kokilapriya",
+    "arohana": "S R₃ G₃ M₁ P D₃ N₃ Ṡ",
+    "avarohana": "Ṡ N₃ D₃ P M₁ G₃ R₃ S",
+    "time_of_day": "Morning",
+    "character": "Kokilapriya is bright and cheerful, evoking joy and liveliness. It is known for its uplifting and playful nature, often associated with vibrant energy.",
+    "associated_deity_emotion": "Kokilapriya is associated with Lord Krishna, symbolizing playful devotion and happiness.",
+    "popular_compositions": [
+      "Kokilamukha Nandasuta - Koteeswara Iyer",
+      "Paripalaya Mam - Swathi Thirunal"
+    ],
+    "history": "Kokilapriya, the 11th melakarta raga, has a unique identity with its bright and lively tone. It is not commonly used but stands out for its cheerful character.",
+    "cultural_significance": "This raga is performed to evoke happiness and a sense of playfulness, often in lighter or thematic performances."
+  }
+
 {
   "name": "Rupavati",
   "arohana": "S R₃ G₃ M₁ P D₁ N₁ S",
