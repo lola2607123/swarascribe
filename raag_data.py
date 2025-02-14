@@ -174,7 +174,7 @@ raags = [
     'history': 'Bhairavi is an ancient raga, mentioned in early texts of Indian classical music, and has been a prominent part of both Carnatic and Hindustani music for centuries. In the Carnatic tradition, Bhairavi is a Melakarta raga and has long been used in devotional and classical music. It is believed to have deep cultural roots, originating from spiritual and devotional themes.',
     'cultural_significance': 'Bhairavi has significant cultural importance, especially in temple and devotional settings, where its emotional depth is used to evoke devotion and a connection to the divine. It plays a major role in classical concerts, especially during early morning or evening renditions, where its reflective and emotional qualities create a deeply meditative atmosphere.'
 }
- {
+{
   "name": "Kalyani",
   "arohana": "S R₂ G₃ M₂ P D₂ N₃ Ṡ",
   "avarohana": "Ṡ N₃ D₂ P M₂ G₃ R₂ S",
@@ -189,8 +189,8 @@ raags = [
   ],
   "history": "Kalyani is one of the most revered ragas in the Carnatic music tradition, often regarded as the quintessential raga for expressing devotion and grandeur. It is a melakarta raga and has been widely used in both classical compositions and performances, representing the culmination of emotional expression. Its origin dates back to the works of early composers like Muthuswami Dikshitar and Tyagaraja, who wrote some of their most popular pieces in this raga.",
   "cultural_significance": "Kalyani holds great cultural significance, particularly in classical Carnatic music and temple performances. Its ability to evoke feelings of beauty and reverence makes it a favorite in both light and classical music. It is performed in various settings, from concerts to festivals, symbolizing divine grace, wealth, and happiness."
- },
- {
+},
+{
   "name": "Kambhoji",
   "arohana": "S R₁ G₃ M₁ P D₁ N₃ Ṡ",
   "avarohana": "Ṡ N₃ D₁ P M₁ G₃ R₁ S",
@@ -205,22 +205,22 @@ raags = [
   ],
   "history": "Kambhoji is one of the prominent ragas in Carnatic music and has been widely used by many legendary composers, including Tyagaraja, Muthuswami Dikshitar, and Shyama Sastri. It has a rich history and has been a central part of Carnatic music for centuries. The raga's profound emotional depth makes it a staple in both classical and devotional music.",
   "cultural_significance": "Kambhoji holds significant cultural importance in both the classical Carnatic music tradition and temple music. It is often performed during important religious ceremonies and festivals, especially in the evening and night. The raga's ability to convey intense emotion and reverence makes it a favorite in devotional concerts and spiritual gatherings."
- },
- {
+},
+{
   "name": "Kharaharapriya",
-  "arohana": "S R₁ G₃ M₁ P D₁ N₃ Ṡ",
-  "avarohana": "Ṡ N₃ D₁ P M₁ G₃ R₁ S",
+  "arohana": "S R₂ G₂ M₁ P D₂ N₂ Ṡ",
+  "avarohana": "Ṡ N₂ D₂ P M₁ G₂ R₂ S",
   "time_of_day": "Late Evening",
-  "character": "Kharaharapriya is a raga that exudes a feeling of devotion, serenity, and emotional intensity. The combination of Shuddha Rishabham (R₁) and Antara Gandharam (G₃) gives it a smooth, contemplative quality, while Shuddha Madhyamam (M₁) and Kakali Nishadam (N₃) add richness to its sound. It is often used to express a sense of longing and deep emotional connection.",
+  "character": "Kharaharapriya is a raga that exudes a feeling of devotion, serenity, and emotional intensity. The combination of Chatusruti Rishabham (R₂) and Sadharana Gandharam (G₂) gives it a smooth, contemplative quality, while Shuddha Madhyamam (M₁) and Kaisiki Nishadam (N₂) add richness to its sound. It is often used to express a sense of longing and deep emotional connection.",
   "associated_deity_emotion": "Kharaharapriya is associated with Lord Rama and is believed to evoke feelings of devotion, surrender, and reverence. It is often used in compositions that express the devotee's intense longing for the divine and their deep emotional connection with God.",
   "popular_compositions": [
     "Narayana Ninna Namada - Purandara Dasa",
     "Rama Ni Samanamevaru - Tyagaraja",
     "Kshamasva - Muthuswami Dikshitar"
   ],
-  "history": "Kharaharapriya is an ancient raga in the Carnatic music tradition and is part of the 28th melakarta raga in the system. It has been used in many compositions, especially in the classical devotional music repertoire. The raga has been an essential part of Carnatic music and has been passed down through generations of composers and performers.",
-  "cultural_significance": "Kharaharapriya holds an important place in the devotional music tradition, especially in compositions dedicated to Lord Rama. It is often performed in the late evening, creating a tranquil and reflective atmosphere. The raga is particularly significant during religious festivals and ceremonies, helping to convey the emotions of devotion and spiritual longing."
- },
+  "history": "Kharaharapriya is a major melakarta raga that has inspired many compositions in the Carnatic tradition. Composers like Tyagaraja have written some of their most celebrated works in this raga. Its ability to convey deep emotional states makes it an enduring and beloved raga in the Carnatic music tradition.",
+  "cultural_significance": "Kharaharapriya is widely performed in both classical concerts and devotional music. Its deep emotional resonance and ability to convey longing and introspection make it a favorite for expressing themes of devotion and spirituality. The raga is often performed in the later parts of classical concerts, providing a profound emotional impact."
+}
  {
   "name": "Todi",
   "arohana": "S R₁ G₃ M₁ P D₁ N₃ S",
