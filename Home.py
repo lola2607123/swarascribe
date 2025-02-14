@@ -134,11 +134,11 @@ with tab2:
 
         with hi1:
             st.title(raag["name"])
-            st.write(raag["intro"])
             st.write('**Arohana**: ' + raag["arohana"])
             st.write('**Avarohana**: ' + raag["avarohana"])
             st.write('**Time of Day**: ' + raag["time_of_day"])
             st.write('**Character**: ' + raag["character"])
+	with h2:
             st.write('**Associated Deity**: ' + raag["associated_deity_emotion"])
             st.write('**Popular Compositions**: ')
             for comp in raag["popular_compositions"]:
