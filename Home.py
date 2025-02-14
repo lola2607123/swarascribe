@@ -123,28 +123,28 @@ with tab2:
 "Harikambhoji", "Mukhari", "Ranjani", "Kapi", "Simhavahini"  
 ))
 
-#loop through raags.name and if option==raags.name, get raag
-raag = None
-for r in raags:
-    if option==r["name"]:
-        raag = r
+    #loop through raags.name and if option==raags.name, get raag
+    raag = None
+    for r in raags:
+        if option==r["name"]:
+            raag = r
 
-if raag is not None:
-    hi1, hi2 = st.columns(2)
+    if raag is not None:
+        hi1, hi2 = st.columns(2)
 
-    with hi1:
-        st.title(raag["name"])
-        st.write(raag["intro"])
-        st.write('**Arohana**: ' + raag["arohana"])
-        st.write('**Avarohana**: ' + raag["avarohana"])
-        st.write('**Time of Day**: ' + raag["time_of_day"])
-        st.write('**Character**: ' + raag["character"])
-        st.write('**Associated Deity**: ' + raag["associated_deity_emotion"])
-        st.write('**Popular Compositions**: ')
-        for comp in raag["popular_compositions"]:
-            st.write(comp)
-        st.write('**History**: ' + raag["history"])
-        st.write('**Cultural Significance**: ' + raag["cultural_significance"])
+        with hi1:
+            st.title(raag["name"])
+            st.write(raag["intro"])
+            st.write('**Arohana**: ' + raag["arohana"])
+            st.write('**Avarohana**: ' + raag["avarohana"])
+            st.write('**Time of Day**: ' + raag["time_of_day"])
+            st.write('**Character**: ' + raag["character"])
+            st.write('**Associated Deity**: ' + raag["associated_deity_emotion"])
+            st.write('**Popular Compositions**: ')
+            for comp in raag["popular_compositions"]:
+                st.write(comp)
+            st.write('**History**: ' + raag["history"])
+            st.write('**Cultural Significance**: ' + raag["cultural_significance"])
 
 # if option=="Shankarabharanam" or option=="Dheerasankarabaranam":
 	
