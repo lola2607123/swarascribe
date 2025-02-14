@@ -285,10 +285,10 @@ if prediction=="Shankharabharanam":
 	            # Every form must have a submit button.
 	            submitted = st.form_submit_button("Submit")   
 	    
-	    	with hi2:
-	         st.image("spec.png")
+                with hi2:
+                        st.image("spec.png")
 	
-	         st.title('Fun Facts About Shankarabharanam')
+                        st.title('Fun Facts About Shankarabharanam')
 	
 		        # Add an introductory text
 		        st.markdown("""
