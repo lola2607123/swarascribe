@@ -140,7 +140,9 @@ if raag is not None:
         st.write('**Time of Day**: ' + raag["time_of_day"])
         st.write('**Character**: ' + raag["character"])
         st.write('**Associated Deity**: ' + raag["associated_deity_emotion"])
-        st.write('**Popular Compositions**: ' + raag["popular_compositions"])
+        st.write('**Popular Compositions**: ')
+	for comp in raag["popular_compositions"]:
+	     st.write(comp)
         st.write('**History**: ' + raag["history"])
         st.write('**Cultural Significance**: ' + raag["cultural_significance"])
 
