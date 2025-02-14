@@ -125,7 +125,7 @@ raags = [
     ],
     'history': 'Hanumatodi is the 8th melakarta raga in the 72 melakarta system, and it is a complex and challenging raga due to its intricate phrasing and intonation. It was classified by Venkatamakhi in the 17th century and has been used in several devotional compositions. The raga has a distinct connection to Lord Hanuman and has gained popularity in the Carnatic tradition over time, especially in the works of composers like Thyagaraja, Muthuswami Dikshitar, and Syama Sastri.',
     'cultural_significance': 'Hanumatodi, while not as widely performed as some other ragas, holds significant cultural value in Carnatic music, particularly in temple settings and devotional concerts. The raga is strongly associated with Lord Hanuman, symbolizing strength and protection, making it a popular choice for invoking blessings in devotional and spiritual contexts.'
-}
+},
 
 {
     'name': 'Dhenuka',
@@ -173,7 +173,7 @@ raags = [
     ],
     'history': 'Bhairavi is an ancient raga, mentioned in early texts of Indian classical music, and has been a prominent part of both Carnatic and Hindustani music for centuries. In the Carnatic tradition, Bhairavi is a Melakarta raga and has long been used in devotional and classical music. It is believed to have deep cultural roots, originating from spiritual and devotional themes.',
     'cultural_significance': 'Bhairavi has significant cultural importance, especially in temple and devotional settings, where its emotional depth is used to evoke devotion and a connection to the divine. It plays a major role in classical concerts, especially during early morning or evening renditions, where its reflective and emotional qualities create a deeply meditative atmosphere.'
-}
+},
 {
   "name": "Kalyani",
   "arohana": "S R₂ G₃ M₂ P D₂ N₃ Ṡ",
@@ -220,7 +220,7 @@ raags = [
   ],
   "history": "Kharaharapriya is a major melakarta raga that has inspired many compositions in the Carnatic tradition. Composers like Tyagaraja have written some of their most celebrated works in this raga. Its ability to convey deep emotional states makes it an enduring and beloved raga in the Carnatic music tradition.",
   "cultural_significance": "Kharaharapriya is widely performed in both classical concerts and devotional music. Its deep emotional resonance and ability to convey longing and introspection make it a favorite for expressing themes of devotion and spirituality. The raga is often performed in the later parts of classical concerts, providing a profound emotional impact."
-}
+},
  {
   "name": "Todi",
   "arohana": "S R₁ G₃ M₁ P D₁ N₃ S",
