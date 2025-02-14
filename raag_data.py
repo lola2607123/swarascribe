@@ -266,7 +266,7 @@ raags = [
     ],
     "history": "Kokilapriya, the 11th melakarta raga, has a unique identity with its bright and lively tone. It is not commonly used but stands out for its cheerful character.",
     "cultural_significance": "This raga is performed to evoke happiness and a sense of playfulness, often in lighter or thematic performances."
-  }
+  },
 
 {
   "name": "Rupavati",
