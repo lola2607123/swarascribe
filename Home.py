@@ -137,12 +137,12 @@ if raag is not None:
         st.write(raag["intro"])
         st.write('**Arohana**: ' + raag["arohana"])
         st.write('**Avarohana**: ' + raag["avarohana"])
-	st.write('**Time of Day**:'+raag["time_of_day"])
-	st.write('**Character**:'+raag["character"])
-	st.write('**Associated Deity**:'+raag["associated_deity_emotion"])
-	st.write('**Popular Compositions**:'+raag["popular_compositions"])
-	st.write('**History**:'+raag["history"])
-	st.write('**Cultural Significance**:'+raag["cultural_significance"])
+        st.write('**Time of Day**: ' + raag["time_of_day"])
+	st.write('**Character**: ' + raag["character"])
+	st.write('**Associated Deity**: ' + raag["associated_deity_emotion"])
+	st.write('**Popular Compositions**: ' + raag["popular_compositions"])
+	st.write('**History**: ' + raag["history"])
+	st.write('**Cultural Significance**: ' + raag["cultural_significance"])
 
 # if option=="Shankarabharanam" or option=="Dheerasankarabaranam":
 	
