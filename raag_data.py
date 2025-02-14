@@ -109,6 +109,7 @@ raags = [
  },
  {
     'name': 'Hanumatodi',
+    'intro': 'Hanumatodi is a profound and devotional raga in Carnatic music that exemplifies emotional depth and boldness. It is characterized by its intricate phrasing, preference for lower notes, and a strong connection to Lord Hanuman, inspiring reverence and devotion.',
     'arohana': 'S R₁ G₂ M₁ P D₁ N₂ Ṡ',
     'avarohana': 'Ṡ N₂ D₁ P M₁ G₂ R₁ S',
     'time_of_day': 'Early Morning',
@@ -124,9 +125,11 @@ raags = [
     ],
     'history': 'Hanumatodi is the 8th melakarta raga in the 72 melakarta system, and it is a complex and challenging raga due to its intricate phrasing and intonation. It was classified by Venkatamakhi in the 17th century and has been used in several devotional compositions. The raga has a distinct connection to Lord Hanuman and has gained popularity in the Carnatic tradition over time, especially in the works of composers like Thyagaraja, Muthuswami Dikshitar, and Syama Sastri.',
     'cultural_significance': 'Hanumatodi, while not as widely performed as some other ragas, holds significant cultural value in Carnatic music, particularly in temple settings and devotional concerts. The raga is strongly associated with Lord Hanuman, symbolizing strength and protection, making it a popular choice for invoking blessings in devotional and spiritual contexts.'
- },
- {
+}
+
+{
     'name': 'Dhenuka',
+    'intro': 'Dhenuka is a serene and meditative raga in Carnatic music that fosters introspection and spiritual reflection. With its tranquil and solemn tone, it is closely associated with Lord Shiva, inspiring peace and divine connection.',
     'arohana': 'S R₁ G₃ M₁ P D₁ N₁ S',
     'avarohana': 'S N₁ D₁ P M₁ G₃ R₁ S',
     'time_of_day': 'Night',
@@ -137,38 +140,40 @@ raags = [
     ],
     'history': 'Dhenuka is part of the Melakarta system and was classified by Venkatamakhi in the 17th century. It is considered one of the more peaceful ragas in the system, though its usage in compositions is not as widespread as some other ragas. The raga has a calming influence and is often chosen for slow, devotional pieces.',
     'cultural_significance': 'Dhenuka is a raga often associated with spiritual practices and is performed in temple settings or during devotional concerts. Its meditative quality makes it suitable for creating a tranquil atmosphere, and it is used to invoke a deep sense of peace and divine presence.'
- },
- {
-  "name": "Natakapriya",
-  "arohana": "S R₁ G₂ M₁ P D₂ N₂ S",
-  "avarohana": "S N₂ D₂ P M₁ G₂ R₁ S",
-  "time_of_day": "Morning",
-  "character": "Natakapriya is known for its dramatic and evocative quality, which makes it suitable for compositions that convey devotion or deep emotion. The combination of Shuddha Rishabham (R₁) and Sadharana Gandharam (G₂) gives it a somber yet soothing feel, while Chatusruti Dhaivatam (D₂) adds brightness to its overall character.",
-  "associated_deity_emotion": "Natakapriya is associated with Lord Vishnu and is believed to evoke feelings of devotion, peace, and reverence. It is often used to express divine connection and a sense of profound emotional depth in compositions.",
-  "popular_compositions": [
-    "Sri Venkatesa Girisam - Muthuswami Dikshitar",
-    "Jagadeesha Guruguha - Muthuswami Dikshitar"
-  ],
-  "history": "Natakapriya is part of the Melakarta system, classified by Venkatamakhin in the 17th century. It is one of the ragas used in both classical and devotional compositions. Although not as commonly performed as some other ragas, its emotional depth makes it highly revered in Carnatic music.",
-  "cultural_significance": "Natakapriya is often performed in temple settings and devotional concerts, where its dramatic and emotional qualities help to convey devotion and spiritual reverence. Its ability to evoke strong emotional connections makes it suitable for compositions in praise of deities, especially in the classical tradition."
- },
- {
-  "name": "Bhairavi",
-  "arohana": "S R₁ G₃ M₁ P D₁ N₃ Ṡ",
-  "avarohana": "Ṡ N₃ D₁ P M₁ G₃ R₁ S",
-  "time_of_day": "Early Morning or Late Evening",
-  "character": "Bhairavi is associated with deep devotion, pathos, and longing. The use of Shuddha Madhyamam (M₁) and Shatsruti Rishabham (R₁) contributes to its somber and devotional feel. The raga evokes feelings of introspection, surrender, and melancholy, often performed in slow tempos to allow for deep emotional expression.",
-  "associated_deity_emotion": "Bhairavi is traditionally associated with intense devotion, spiritual release, and divine yearning. It expresses themes of separation and longing, often used in compositions to convey deep emotional connection with the divine.",
-  "popular_compositions": [
-    "Madhava Mamava - Muthuswami Dikshitar",
-    "Bhavayami Gopalabalam - Annamacharya",
-    "Enna Thavam Seithanai - Muthuswami Dikshitar",
-    "Jagadananda Karaka - Tyagaraja",
-    "Rama Nannu Brovara - Tyagaraja"
-  ],
-  "history": "Bhairavi is an ancient raga, mentioned in early texts of Indian classical music, and has been a prominent part of both Carnatic and Hindustani music for centuries. In the Carnatic tradition, Bhairavi is a Melakarta raga and has long been used in devotional and classical music. It is believed to have deep cultural roots, originating from spiritual and devotional themes.",
-  "cultural_significance": "Bhairavi has significant cultural importance, especially in temple and devotional settings, where its emotional depth is used to evoke devotion and a connection to the divine. It plays a major role in classical concerts, especially during early morning or evening renditions, where its reflective and emotional qualities create a deeply meditative atmosphere."
- },
+},
+{
+    'name': 'Natakapriya',
+    'intro': 'Natakapriya is a dramatic and evocative raga that conveys profound emotion and devotion. Its rich tonal quality makes it a unique choice for expressing a deep connection with Lord Vishnu, particularly in the morning hours.',
+    'arohana': 'S R₁ G₂ M₁ P D₂ N₂ S',
+    'avarohana': 'S N₂ D₂ P M₁ G₂ R₁ S',
+    'time_of_day': 'Morning',
+    'character': 'Natakapriya is known for its dramatic and evocative quality, which makes it suitable for compositions that convey devotion or deep emotion. The combination of Shuddha Rishabham (R₁) and Sadharana Gandharam (G₂) gives it a somber yet soothing feel, while Chatusruti Dhaivatam (D₂) adds brightness to its overall character.',
+    'associated_deity_emotion': 'Natakapriya is associated with Lord Vishnu and is believed to evoke feelings of devotion, peace, and reverence. It is often used to express divine connection and a sense of profound emotional depth in compositions.',
+    'popular_compositions': [
+        'Sri Venkatesa Girisam - Muthuswami Dikshitar',
+        'Jagadeesha Guruguha - Muthuswami Dikshitar'
+    ],
+    'history': 'Natakapriya is part of the Melakarta system, classified by Venkatamakhin in the 17th century. It is one of the ragas used in both classical and devotional compositions. Although not as commonly performed as some other ragas, its emotional depth makes it highly revered in Carnatic music.',
+    'cultural_significance': 'Natakapriya is often performed in temple settings and devotional concerts, where its dramatic and emotional qualities help to convey devotion and spiritual reverence. Its ability to evoke strong emotional connections makes it suitable for compositions in praise of deities, especially in the classical tradition.'
+},
+{
+    'name': 'Bhairavi',
+    'intro': 'Bhairavi is an ancient and deeply expressive raga that symbolizes devotion, pathos, and spiritual yearning. Its introspective and somber character has made it a timeless choice in Carnatic and Hindustani music traditions.',
+    'arohana': 'S R₁ G₃ M₁ P D₁ N₃ Ṡ',
+    'avarohana': 'Ṡ N₃ D₁ P M₁ G₃ R₁ S',
+    'time_of_day': 'Early Morning or Late Evening',
+    'character': 'Bhairavi is associated with deep devotion, pathos, and longing. The use of Shuddha Madhyamam (M₁) and Shatsruti Rishabham (R₁) contributes to its somber and devotional feel. The raga evokes feelings of introspection, surrender, and melancholy, often performed in slow tempos to allow for deep emotional expression.',
+    'associated_deity_emotion': 'Bhairavi is traditionally associated with intense devotion, spiritual release, and divine yearning. It expresses themes of separation and longing, often used in compositions to convey deep emotional connection with the divine.',
+    'popular_compositions': [
+        'Madhava Mamava - Muthuswami Dikshitar',
+        'Bhavayami Gopalabalam - Annamacharya',
+        'Enna Thavam Seithanai - Muthuswami Dikshitar',
+        'Jagadananda Karaka - Tyagaraja',
+        'Rama Nannu Brovara - Tyagaraja'
+    ],
+    'history': 'Bhairavi is an ancient raga, mentioned in early texts of Indian classical music, and has been a prominent part of both Carnatic and Hindustani music for centuries. In the Carnatic tradition, Bhairavi is a Melakarta raga and has long been used in devotional and classical music. It is believed to have deep cultural roots, originating from spiritual and devotional themes.',
+    'cultural_significance': 'Bhairavi has significant cultural importance, especially in temple and devotional settings, where its emotional depth is used to evoke devotion and a connection to the divine. It plays a major role in classical concerts, especially during early morning or evening renditions, where its reflective and emotional qualities create a deeply meditative atmosphere.'
+}
  {
   "name": "Kalyani",
   "arohana": "S R₂ G₃ M₂ P D₂ N₃ Ṡ",
