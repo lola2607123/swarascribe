@@ -279,7 +279,7 @@ with hi1:
 	        st.write("Feedback - Was I Right?")
 	        sentiment_mapping = [":material/thumb_down:", ":material/thumb_up:"]
 	        selected = st.feedback("thumbs")
-		if selected is not None:
+                if selected is not None:
 			st.markdown(f"You selected: {sentiment_mapping[selected]}")
 	                # Every form must have a submit button.
 	                submitted = st.form_submit_button("Submit")   
