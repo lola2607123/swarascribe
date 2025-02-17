@@ -237,85 +237,85 @@ with tab3:
         prediction = predict_audio_class(uploaded_file)
         st.write(prediction)
 
-        hi1, hi2 = st.columns(2)
-        with hi1:
-	        st.title("This song is in the ragam: Shankharabharanam")
+hi1, hi2 = st.columns(2)
+with hi1:
+	st.title("This song is in the ragam: Shankharabharanam")
 	
 	
-	        st.write(''' **Arohana**: S R₂ G₃ M₁ P D₂ N₃ Ṡ   
-	                    **Avarohana**: Ṡ N₃ D₂ P M₁ G₃ R₂ S''')
+	st.write(''' **Arohana**: S R₂ G₃ M₁ P D₂ N₃ Ṡ   
+	**Avarohana**: Ṡ N₃ D₂ P M₁ G₃ R₂ S''')
 	        
-	        st.markdown("""
-	    	**Notes of Shankarabharanam:**
-	    	- **S** (Shadjam)
-	    	- **R₂** (Chatushruti Rishabham)
-	    	- **G₃** (Antara Gandharam)
-	    	- **M₁** (Shuddha Madhyamam)
-	    	- **P** (Paṅchamam)
-	    	- **D₂** (Chatushruti Dhaivatam)
-	    	- **N₃** (Kakali Nishadam)
-	    	""")
-	        # Title of the page
-	        st.title("Janya Ragas of Shankarabharanam")
+	st.markdown("""
+	**Notes of Shankarabharanam:**
+	- **S** (Shadjam)
+	- **R₂** (Chatushruti Rishabham)
+	- **G₃** (Antara Gandharam)
+	- **M₁** (Shuddha Madhyamam)
+	- **P** (Paṅchamam)
+	- **D₂** (Chatushruti Dhaivatam)
+	- **N₃** (Kakali Nishadam)
+	""")
+	# Title of the page
+	st.title("Janya Ragas of Shankarabharanam")
 	
-	        # Display text with bullet points and emojis
-	        st.markdown("""
-	        Shankarabharanam has given rise to many Janya (derived) ragas, each bringing out different moods and interpretations. 
-	        Some well-known Janya ragas include:
-	        - 🎶 **Arabhi**
-	        - 🎶 **Atana**
-	        - 🎶 **Bilahari**
-	        - 🎶 **Devagaandhaari**
-	        - 🎶 **Jana Ranjani**
-	        - 🎶 **Hamsadhvani**
-	        - 🎶 **Kadanakutuhalam**
-	        - 🎶 **Niroshta**
-	        - 🎶 **Shuddha Sāveri**
-	        - 🎶 **Pahādi**
+	# Display text with bullet points and emojis
+	st.markdown("""
+	Shankarabharanam has given rise to many Janya (derived) ragas, each bringing out different moods and interpretations. 
+	Some well-known Janya ragas include:
+	- 🎶 **Arabhi**
+	- 🎶 **Atana**
+	- 🎶 **Bilahari**
+	- 🎶 **Devagaandhaari**
+	- 🎶 **Jana Ranjani**
+	- 🎶 **Hamsadhvani**
+	- 🎶 **Kadanakutuhalam**
+	- 🎶 **Niroshta**
+	- 🎶 **Shuddha Sāveri**
+	- 🎶 **Pahādi**
 	
-	        These Janya ragas add richness to the raga's expression, allowing for diverse musical exploration within the framework of Shankarabharanam.
-	        """)
-	        with st.form("my_form"):
-	            st.write("Feedback - Was I Right?")
-	            sentiment_mapping = [":material/thumb_down:", ":material/thumb_up:"]
-	            selected = st.feedback("thumbs")
+	These Janya ragas add richness to the raga's expression, allowing for diverse musical exploration within the framework of Shankarabharanam.
+	""")
+	with st.form("my_form"):
+	        st.write("Feedback - Was I Right?")
+	        sentiment_mapping = [":material/thumb_down:", ":material/thumb_up:"]
+	        selected = st.feedback("thumbs")
 	            if selected is not None:
-	                st.markdown(f"You selected: {sentiment_mapping[selected]}")
-	            # Every form must have a submit button.
-	            submitted = st.form_submit_button("Submit")   
+	        st.markdown(f"You selected: {sentiment_mapping[selected]}")
+	        # Every form must have a submit button.
+	        submitted = st.form_submit_button("Submit")   
 	    
-                with hi2:
-                        st.image("spec.png")
+        with hi2:
+                st.image("spec.png")
 	
-                        st.title('Fun Facts About Shankarabharanam')
+                st.title('Fun Facts About Shankarabharanam')
 	
-		        # Add an introductory text
-		        st.markdown("""
-		        Shankarabharanam is a majestic raga in Carnatic music, known for its grandeur and versatility. Here are some interesting facts about this raga:
-		        """)
+		# Add an introductory text
+		st.markdown("""
+		Shankarabharanam is a majestic raga in Carnatic music, known for its grandeur and versatility. Here are some interesting facts about this raga:
+		""")
 		
-		        # List of facts
-		        facts = [
-		            ("🧑‍🎤 **King of Ragas**", "Shankarabharanam is considered one of the most majestic and revered ragas in Carnatic music."),
-		            ("🎵 **Melakarta Raga**", "It is the 29th raga in the 72 Melakarta system and falls under the Indu Chakra."),
-		            ("🔢 **Sampurna Scale**", "Shankarabharanam uses all seven notes in both ascending and descending scales: S, R₂, G₃, M₁, P, D₂, N₃."),
-		            ("🎶 **Vadi and Samvadi**", "The Vadi (most important note) is P (Paṅchamam), and the Samvadi is S (Shadjam)."),
-		            ("🌅 **Time of Performance**", "Typically performed in the early evening, evoking serenity and devotion."),
-		            ("🎤 **Famous Compositions**", "Known for iconic compositions like 'Vatapi Ganapatim' by Muthuswami Dikshitar."),
-		            ("💎 **Name Meaning**", "Shankarabharanam translates to 'the ornament of Shankara' (Lord Shiva)."),
-		            ("🎶 **Hindustani Equivalent**", "The raga's counterpart in Hindustani music is Yaman, with a similar mood and structure."),
-		            ("🩷 **Emotional Range**", "Shankarabharanam expresses devotion, grandeur, and peacefulness, making it versatile for performances."),
-		            ("🎻 **Vocal and Instrumental**", "Popular in both vocal and instrumental renditions, especially in classical concerts.")
-		        ]
+		# List of facts
+		facts = [
+		        ("🧑‍🎤 **King of Ragas**", "Shankarabharanam is considered one of the most majestic and revered ragas in Carnatic music."),
+		        ("🎵 **Melakarta Raga**", "It is the 29th raga in the 72 Melakarta system and falls under the Indu Chakra."),
+		        ("🔢 **Sampurna Scale**", "Shankarabharanam uses all seven notes in both ascending and descending scales: S, R₂, G₃, M₁, P, D₂, N₃."),
+		        ("🎶 **Vadi and Samvadi**", "The Vadi (most important note) is P (Paṅchamam), and the Samvadi is S (Shadjam)."),
+		        ("🌅 **Time of Performance**", "Typically performed in the early evening, evoking serenity and devotion."),
+		        ("🎤 **Famous Compositions**", "Known for iconic compositions like 'Vatapi Ganapatim' by Muthuswami Dikshitar."),
+		        ("💎 **Name Meaning**", "Shankarabharanam translates to 'the ornament of Shankara' (Lord Shiva)."),
+		        ("🎶 **Hindustani Equivalent**", "The raga's counterpart in Hindustani music is Yaman, with a similar mood and structure."),
+		        ("🩷 **Emotional Range**", "Shankarabharanam expresses devotion, grandeur, and peacefulness, making it versatile for performances."),
+		        ("🎻 **Vocal and Instrumental**", "Popular in both vocal and instrumental renditions, especially in classical concerts.")
+		]
 		
-		        # Loop through the list and present each fact
-		        for fact in facts:
-		            st.markdown(f"**{fact[0]}**: {fact[1]}")
+		# Loop through the list and present each fact
+		for fact in facts:
+		        st.markdown(f"**{fact[0]}**: {fact[1]}")
 		
-		    st.header("CHALAMELA")
+		st.header("CHALAMELA")
 		 
-		    st.markdown('''Ragam: Durbar (22nd Mela Janyam)
-			Talam: Adi
+		st.markdown('''Ragam: Durbar (22nd Mela Janyam)
+		Talam: Adi
 			 
 			Arohanam:          S R2 M1 P D2 N2 S            	||
 			Avarohanam:  	S N2 D2 P M1 R2 G2 G2 R2 S    	||
@@ -332,44 +332,44 @@ with tab3:
 			Meaning: Lord Venugopala, why do you wreak a grudge on me? Please shower your Grace upon this one who has ardently believed in you.''')
 			 
 			 
-		    st.subheader("Pallavi:")
+		st.subheader("Pallavi:")
 			 
-		    st.markdown('''P &nbsp; &nbsp; M &nbsp; &nbsp; R &nbsp; &nbsp;,  &nbsp; &nbsp;    G &nbsp; &nbsp; , &nbsp; &nbsp;  G &nbsp; &nbsp; , &nbsp; &nbsp;       R &nbsp; &nbsp; S &nbsp; &nbsp; R &nbsp; &nbsp; , &nbsp; &nbsp;        N &nbsp; &nbsp; R &nbsp; &nbsp; S  &nbsp; &nbsp; N &nbsp; &nbsp; | D &nbsp; &nbsp; P &nbsp; &nbsp; D &nbsp; &nbsp; N &nbsp; &nbsp;  	S &nbsp; &nbsp; R &nbsp; &nbsp; S &nbsp; &nbsp; R  &nbsp; &nbsp; ||&nbsp; &nbsp;	P &nbsp; &nbsp; , &nbsp; &nbsp; M &nbsp; &nbsp; R  &nbsp; &nbsp;  	G &nbsp; &nbsp; R &nbsp; &nbsp; S &nbsp; &nbsp; R &nbsp; &nbsp; ||''')
+		st.markdown('''P &nbsp; &nbsp; M &nbsp; &nbsp; R &nbsp; &nbsp;,  &nbsp; &nbsp;    G &nbsp; &nbsp; , &nbsp; &nbsp;  G &nbsp; &nbsp; , &nbsp; &nbsp;       R &nbsp; &nbsp; S &nbsp; &nbsp; R &nbsp; &nbsp; , &nbsp; &nbsp;        N &nbsp; &nbsp; R &nbsp; &nbsp; S  &nbsp; &nbsp; N &nbsp; &nbsp; | D &nbsp; &nbsp; P &nbsp; &nbsp; D &nbsp; &nbsp; N &nbsp; &nbsp;  	S &nbsp; &nbsp; R &nbsp; &nbsp; S &nbsp; &nbsp; R  &nbsp; &nbsp; ||&nbsp; &nbsp;	P &nbsp; &nbsp; , &nbsp; &nbsp; M &nbsp; &nbsp; R  &nbsp; &nbsp;  	G &nbsp; &nbsp; R &nbsp; &nbsp; S &nbsp; &nbsp; R &nbsp; &nbsp; ||''')
 			                
-		    st.markdown('''Cha- &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;la - &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 	 &nbsp; &nbsp;     me-  &nbsp; &nbsp;   &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 	la -    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 	je &nbsp; &nbsp;-  &nbsp; &nbsp;-  &nbsp; &nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;se&nbsp; &nbsp; -    &nbsp; &nbsp;	- &nbsp; &nbsp; - &nbsp; &nbsp; - &nbsp; &nbsp; -  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;    	vu &nbsp; &nbsp; -&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;- &nbsp; &nbsp;ra &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;    	- &nbsp; &nbsp; - &nbsp; &nbsp; - &nbsp; &nbsp; -&nbsp; &nbsp;|\n\n''')
+		st.markdown('''Cha- &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;la - &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 	 &nbsp; &nbsp;     me-  &nbsp; &nbsp;   &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 	la -    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 	je &nbsp; &nbsp;-  &nbsp; &nbsp;-  &nbsp; &nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;se&nbsp; &nbsp; -    &nbsp; &nbsp;	- &nbsp; &nbsp; - &nbsp; &nbsp; - &nbsp; &nbsp; -  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;    	vu &nbsp; &nbsp; -&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;- &nbsp; &nbsp;ra &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;    	- &nbsp; &nbsp; - &nbsp; &nbsp; - &nbsp; &nbsp; -&nbsp; &nbsp;|\n\n''')
 			 
 			 
-		    st.markdown('''P &nbsp; &nbsp; M  &nbsp; &nbsp; R &nbsp; &nbsp;G  &nbsp; &nbsp;	R &nbsp; &nbsp;S &nbsp; &nbsp;R&nbsp; &nbsp; M &nbsp; &nbsp; || &nbsp; &nbsp;  P &nbsp; &nbsp;M&nbsp; &nbsp; , &nbsp; &nbsp;P  &nbsp; &nbsp;   	D&nbsp; &nbsp; N&nbsp; &nbsp; S&nbsp; &nbsp; R &nbsp; &nbsp;|| &nbsp; &nbsp;N&nbsp; &nbsp; N &nbsp; &nbsp;, &nbsp; &nbsp; D  &nbsp; &nbsp; 	D&nbsp; &nbsp; P &nbsp; &nbsp;D&nbsp; &nbsp; N &nbsp; &nbsp; | &nbsp; &nbsp; P &nbsp; &nbsp; M &nbsp; &nbsp;R &nbsp; &nbsp;G   &nbsp; &nbsp; 	G &nbsp; &nbsp;R &nbsp; &nbsp;S &nbsp; &nbsp;R &nbsp; &nbsp;||\n\n''')
-		    st.markdown('''Cha  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;- -  &nbsp; &nbsp;&nbsp; &nbsp; -   	-   &nbsp; &nbsp;&nbsp; &nbsp;- la -   &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;      - nam - -    &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;	-  -   -  -| &nbsp; &nbsp;&nbsp; &nbsp;Mi -  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;- na    &nbsp; &nbsp;&nbsp; &nbsp;	- &nbsp; &nbsp;&nbsp; &nbsp;  -  na -  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 	-  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; -  -  -      	pai  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;- - - &nbsp; &nbsp;&nbsp; &nbsp;|\n\n''')
+		st.markdown('''P &nbsp; &nbsp; M  &nbsp; &nbsp; R &nbsp; &nbsp;G  &nbsp; &nbsp;	R &nbsp; &nbsp;S &nbsp; &nbsp;R&nbsp; &nbsp; M &nbsp; &nbsp; || &nbsp; &nbsp;  P &nbsp; &nbsp;M&nbsp; &nbsp; , &nbsp; &nbsp;P  &nbsp; &nbsp;   	D&nbsp; &nbsp; N&nbsp; &nbsp; S&nbsp; &nbsp; R &nbsp; &nbsp;|| &nbsp; &nbsp;N&nbsp; &nbsp; N &nbsp; &nbsp;, &nbsp; &nbsp; D  &nbsp; &nbsp; 	D&nbsp; &nbsp; P &nbsp; &nbsp;D&nbsp; &nbsp; N &nbsp; &nbsp; | &nbsp; &nbsp; P &nbsp; &nbsp; M &nbsp; &nbsp;R &nbsp; &nbsp;G   &nbsp; &nbsp; 	G &nbsp; &nbsp;R &nbsp; &nbsp;S &nbsp; &nbsp;R &nbsp; &nbsp;||\n\n''')
+		st.markdown('''Cha  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;- -  &nbsp; &nbsp;&nbsp; &nbsp; -   	-   &nbsp; &nbsp;&nbsp; &nbsp;- la -   &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;      - nam - -    &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;	-  -   -  -| &nbsp; &nbsp;&nbsp; &nbsp;Mi -  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;- na    &nbsp; &nbsp;&nbsp; &nbsp;	- &nbsp; &nbsp;&nbsp; &nbsp;  -  na -  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 	-  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; -  -  -      	pai  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;- - - &nbsp; &nbsp;&nbsp; &nbsp;|\n\n''')
 			 
-		    st.subheader("Anupallavi:")
+		st.subheader("Anupallavi:")
 			
 			 
-		    st.markdown('''D&nbsp; &nbsp; N&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp;   	M&nbsp; &nbsp; P&nbsp; &nbsp; R&nbsp; &nbsp; M&nbsp; &nbsp;  	R&nbsp; &nbsp; P&nbsp; &nbsp; M&nbsp; &nbsp; R&nbsp; &nbsp;   	G &nbsp; &nbsp;G &nbsp; &nbsp;R&nbsp; &nbsp; S&nbsp; &nbsp; ||&nbsp; &nbsp;M&nbsp; &nbsp; M&nbsp; &nbsp; R&nbsp; &nbsp; P&nbsp; &nbsp;   	P&nbsp; &nbsp; M&nbsp; &nbsp; D&nbsp; &nbsp; D&nbsp; &nbsp;   |  &nbsp; &nbsp; P&nbsp; &nbsp; M&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp;    	N &nbsp; &nbsp;N &nbsp; &nbsp;S&nbsp; &nbsp;  , &nbsp; &nbsp;||\n\n''')
-		    st.markdown('''Va- &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;-   -     	-  -  &nbsp; &nbsp;&nbsp; &nbsp;  la -    &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;	-   -  -  -    	chi - &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; -   -|  &nbsp; &nbsp;&nbsp; &nbsp;yu -  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  -   -   	-   &nbsp; &nbsp;&nbsp; &nbsp; -  na -  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  	-  na -  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  -     	 &nbsp; &nbsp;&nbsp; &nbsp;tho -  &nbsp; &nbsp;&nbsp; &nbsp;- &nbsp; &nbsp;&nbsp; &nbsp; - &nbsp; &nbsp;&nbsp; &nbsp;|\n\n''')
+		st.markdown('''D&nbsp; &nbsp; N&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp;   	M&nbsp; &nbsp; P&nbsp; &nbsp; R&nbsp; &nbsp; M&nbsp; &nbsp;  	R&nbsp; &nbsp; P&nbsp; &nbsp; M&nbsp; &nbsp; R&nbsp; &nbsp;   	G &nbsp; &nbsp;G &nbsp; &nbsp;R&nbsp; &nbsp; S&nbsp; &nbsp; ||&nbsp; &nbsp;M&nbsp; &nbsp; M&nbsp; &nbsp; R&nbsp; &nbsp; P&nbsp; &nbsp;   	P&nbsp; &nbsp; M&nbsp; &nbsp; D&nbsp; &nbsp; D&nbsp; &nbsp;   |  &nbsp; &nbsp; P&nbsp; &nbsp; M&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp;    	N &nbsp; &nbsp;N &nbsp; &nbsp;S&nbsp; &nbsp;  , &nbsp; &nbsp;||\n\n''')
+		st.markdown('''Va- &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;-   -     	-  -  &nbsp; &nbsp;&nbsp; &nbsp;  la -    &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;	-   -  -  -    	chi - &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; -   -|  &nbsp; &nbsp;&nbsp; &nbsp;yu -  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  -   -   	-   &nbsp; &nbsp;&nbsp; &nbsp; -  na -  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  	-  na -  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  -     	 &nbsp; &nbsp;&nbsp; &nbsp;tho -  &nbsp; &nbsp;&nbsp; &nbsp;- &nbsp; &nbsp;&nbsp; &nbsp; - &nbsp; &nbsp;&nbsp; &nbsp;|\n\n''')
 			 
-		    st.markdown('''P&nbsp; &nbsp; D&nbsp; &nbsp; P&nbsp; &nbsp; S&nbsp; &nbsp;          N&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; S&nbsp; &nbsp;   	R &nbsp; &nbsp;G&nbsp; &nbsp; G&nbsp; &nbsp; R&nbsp; &nbsp;    	S&nbsp; &nbsp; N&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; ||&nbsp; &nbsp;S &nbsp; &nbsp; ,&nbsp; &nbsp;   ,&nbsp; &nbsp;   P&nbsp; &nbsp;     	, &nbsp; &nbsp;  , &nbsp; &nbsp;  D&nbsp; &nbsp; N&nbsp; &nbsp;  |   &nbsp; &nbsp;P&nbsp; &nbsp; M&nbsp; &nbsp; R&nbsp; &nbsp; G&nbsp; &nbsp;    	G&nbsp; &nbsp; R&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; ||\n\n''')
-		    st.markdown('''Va &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; -  pa  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  	-    -   la -   &nbsp; &nbsp;&nbsp; &nbsp; 	-    -  &nbsp; &nbsp;&nbsp; &nbsp; de -   &nbsp; &nbsp;&nbsp; &nbsp;   	- va  &nbsp; &nbsp;&nbsp; &nbsp;-  - &nbsp; &nbsp;&nbsp; &nbsp;|\n\n''')
+		st.markdown('''P&nbsp; &nbsp; D&nbsp; &nbsp; P&nbsp; &nbsp; S&nbsp; &nbsp;          N&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; S&nbsp; &nbsp;   	R &nbsp; &nbsp;G&nbsp; &nbsp; G&nbsp; &nbsp; R&nbsp; &nbsp;    	S&nbsp; &nbsp; N&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; ||&nbsp; &nbsp;S &nbsp; &nbsp; ,&nbsp; &nbsp;   ,&nbsp; &nbsp;   P&nbsp; &nbsp;     	, &nbsp; &nbsp;  , &nbsp; &nbsp;  D&nbsp; &nbsp; N&nbsp; &nbsp;  |   &nbsp; &nbsp;P&nbsp; &nbsp; M&nbsp; &nbsp; R&nbsp; &nbsp; G&nbsp; &nbsp;    	G&nbsp; &nbsp; R&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; ||\n\n''')
+		st.markdown('''Va &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; -  pa  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  	-    -   la -   &nbsp; &nbsp;&nbsp; &nbsp; 	-    -  &nbsp; &nbsp;&nbsp; &nbsp; de -   &nbsp; &nbsp;&nbsp; &nbsp;   	- va  &nbsp; &nbsp;&nbsp; &nbsp;-  - &nbsp; &nbsp;&nbsp; &nbsp;|\n\n''')
 			
-		    st.subheader("Mukthayi Swaram:")
-			
-			 
-		    st.markdown('''P &nbsp; &nbsp;M&nbsp; &nbsp; R&nbsp; &nbsp; G&nbsp; &nbsp;    	R &nbsp; &nbsp;S&nbsp; &nbsp; N&nbsp; &nbsp; R&nbsp; &nbsp;  	 S&nbsp; &nbsp; R&nbsp; &nbsp; N&nbsp; &nbsp; S&nbsp; &nbsp;  	  D &nbsp; &nbsp;P&nbsp; &nbsp; D&nbsp; &nbsp; N&nbsp; &nbsp; ||\n\n S&nbsp; &nbsp; R&nbsp; &nbsp; S&nbsp; &nbsp; M&nbsp; &nbsp;      	R &nbsp; &nbsp;P&nbsp; &nbsp; M&nbsp; &nbsp; D&nbsp; &nbsp;  |	&nbsp; &nbsp;P &nbsp; &nbsp;D&nbsp; &nbsp; M&nbsp; &nbsp; &nbsp; &nbsp;P&nbsp; &nbsp;   	D N S ,  ||\n\n''')
-			 
-			
-		    st.markdown('''D&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp; N&nbsp; &nbsp;       S &nbsp; &nbsp; ,&nbsp; &nbsp;  R&nbsp; &nbsp; S&nbsp; &nbsp;   	R&nbsp; &nbsp; G&nbsp; &nbsp; G&nbsp; &nbsp; R&nbsp; &nbsp;  	S&nbsp; &nbsp; R&nbsp; &nbsp; N&nbsp; &nbsp; ,&nbsp; &nbsp;  ||\n\n D&nbsp; &nbsp;  P&nbsp; &nbsp;   S&nbsp; &nbsp;  S&nbsp; &nbsp;        	&nbsp; &nbsp; , &nbsp; &nbsp;  P &nbsp; &nbsp;  P&nbsp; &nbsp;   ,&nbsp; &nbsp;    |&nbsp; &nbsp; 	D&nbsp; &nbsp;  P &nbsp; &nbsp; M &nbsp; &nbsp; R&nbsp; &nbsp;    	G&nbsp; &nbsp;  R&nbsp; &nbsp;  S&nbsp; &nbsp;  R&nbsp; &nbsp;   || (Cha)|\n\n''')
-			 
+		st.subheader("Mukthayi Swaram:")
 			
 			 
+		st.markdown('''P &nbsp; &nbsp;M&nbsp; &nbsp; R&nbsp; &nbsp; G&nbsp; &nbsp;    	R &nbsp; &nbsp;S&nbsp; &nbsp; N&nbsp; &nbsp; R&nbsp; &nbsp;  	 S&nbsp; &nbsp; R&nbsp; &nbsp; N&nbsp; &nbsp; S&nbsp; &nbsp;  	  D &nbsp; &nbsp;P&nbsp; &nbsp; D&nbsp; &nbsp; N&nbsp; &nbsp; ||\n\n S&nbsp; &nbsp; R&nbsp; &nbsp; S&nbsp; &nbsp; M&nbsp; &nbsp;      	R &nbsp; &nbsp;P&nbsp; &nbsp; M&nbsp; &nbsp; D&nbsp; &nbsp;  |	&nbsp; &nbsp;P &nbsp; &nbsp;D&nbsp; &nbsp; M&nbsp; &nbsp; &nbsp; &nbsp;P&nbsp; &nbsp;   	D N S ,  ||\n\n''')
 			 
-		    st.subheader("Charanam:")
+			
+		st.markdown('''D&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp; N&nbsp; &nbsp;       S &nbsp; &nbsp; ,&nbsp; &nbsp;  R&nbsp; &nbsp; S&nbsp; &nbsp;   	R&nbsp; &nbsp; G&nbsp; &nbsp; G&nbsp; &nbsp; R&nbsp; &nbsp;  	S&nbsp; &nbsp; R&nbsp; &nbsp; N&nbsp; &nbsp; ,&nbsp; &nbsp;  ||\n\n D&nbsp; &nbsp;  P&nbsp; &nbsp;   S&nbsp; &nbsp;  S&nbsp; &nbsp;        	&nbsp; &nbsp; , &nbsp; &nbsp;  P &nbsp; &nbsp;  P&nbsp; &nbsp;   ,&nbsp; &nbsp;    |&nbsp; &nbsp; 	D&nbsp; &nbsp;  P &nbsp; &nbsp; M &nbsp; &nbsp; R&nbsp; &nbsp;    	G&nbsp; &nbsp;  R&nbsp; &nbsp;  S&nbsp; &nbsp;  R&nbsp; &nbsp;   || (Cha)|\n\n''')
 			 
-		    st.markdown('''P&nbsp; &nbsp;  ,&nbsp; &nbsp;   P&nbsp; &nbsp; ,&nbsp; &nbsp;     	,&nbsp; &nbsp;  D&nbsp; &nbsp; P &nbsp; &nbsp;M&nbsp; &nbsp;       	P&nbsp; &nbsp; D&nbsp; &nbsp; ,&nbsp; &nbsp;  P&nbsp; &nbsp;   	D&nbsp; &nbsp; ,&nbsp; &nbsp;  D&nbsp; &nbsp; R&nbsp; &nbsp;  ||&nbsp; &nbsp;N &nbsp; &nbsp; ,&nbsp; &nbsp; N&nbsp; &nbsp;  ,&nbsp; &nbsp;     	D&nbsp; &nbsp; ,&nbsp; &nbsp;   P&nbsp; &nbsp;  ,&nbsp; &nbsp;    |   	&nbsp; &nbsp;M &nbsp; &nbsp;R &nbsp; &nbsp;G &nbsp; &nbsp;, &nbsp; &nbsp;  	R&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; M&nbsp; &nbsp; ||   |\n\n''')
-		    st.markdown('''Pa -&nbsp;&nbsp;&nbsp; &nbsp;  &nbsp;  lu -  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 	&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;- &nbsp;&nbsp; ku - &nbsp;&nbsp;&nbsp; -   &nbsp;&nbsp;     &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;	-  &nbsp;&nbsp;&nbsp; -  -&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; -    &nbsp;&nbsp;&nbsp;&nbsp;	&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;-  -   -  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;-&nbsp;&nbsp;|&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Mu -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - -  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;    &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;	- &nbsp;&nbsp; - &nbsp;  -  -  &nbsp;&nbsp;      &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;	na - &nbsp;&nbsp; - &nbsp;&nbsp; -   &nbsp;&nbsp;&nbsp;	tho&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; -&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;- &nbsp; -&nbsp;&nbsp;|\n\n''')
+			
 			 
-		    st.subheader("Chittai Swaram:")
 			 
-		    st.markdown('''1.  P &nbsp; &nbsp; ,&nbsp; &nbsp;   ,&nbsp; &nbsp;  ,&nbsp; &nbsp;  	  ,&nbsp; &nbsp;   ,&nbsp; &nbsp;   D &nbsp; &nbsp;, &nbsp; &nbsp; 	,&nbsp; &nbsp;   , &nbsp; &nbsp; P&nbsp; &nbsp;  ,&nbsp; &nbsp;      M &nbsp; &nbsp; , &nbsp; &nbsp; R &nbsp; &nbsp; ,&nbsp; &nbsp; || &nbsp; &nbsp;G  &nbsp; &nbsp; , &nbsp; &nbsp;   , &nbsp; &nbsp;   , &nbsp; &nbsp;  	R &nbsp; &nbsp;   , &nbsp; &nbsp;  , &nbsp; &nbsp;   , &nbsp; &nbsp;  |	 &nbsp; &nbsp;S  &nbsp; &nbsp; , &nbsp; &nbsp;   ,  &nbsp; &nbsp;  , &nbsp; &nbsp;  	R &nbsp; &nbsp; ,  &nbsp; &nbsp; M &nbsp; &nbsp; , &nbsp; &nbsp; ||  (Palu)|\n\n \n\n \n\n
+		st.subheader("Charanam:")
+			 
+		st.markdown('''P&nbsp; &nbsp;  ,&nbsp; &nbsp;   P&nbsp; &nbsp; ,&nbsp; &nbsp;     	,&nbsp; &nbsp;  D&nbsp; &nbsp; P &nbsp; &nbsp;M&nbsp; &nbsp;       	P&nbsp; &nbsp; D&nbsp; &nbsp; ,&nbsp; &nbsp;  P&nbsp; &nbsp;   	D&nbsp; &nbsp; ,&nbsp; &nbsp;  D&nbsp; &nbsp; R&nbsp; &nbsp;  ||&nbsp; &nbsp;N &nbsp; &nbsp; ,&nbsp; &nbsp; N&nbsp; &nbsp;  ,&nbsp; &nbsp;     	D&nbsp; &nbsp; ,&nbsp; &nbsp;   P&nbsp; &nbsp;  ,&nbsp; &nbsp;    |   	&nbsp; &nbsp;M &nbsp; &nbsp;R &nbsp; &nbsp;G &nbsp; &nbsp;, &nbsp; &nbsp;  	R&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; M&nbsp; &nbsp; ||   |\n\n''')
+		st.markdown('''Pa -&nbsp;&nbsp;&nbsp; &nbsp;  &nbsp;  lu -  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 	&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;- &nbsp;&nbsp; ku - &nbsp;&nbsp;&nbsp; -   &nbsp;&nbsp;     &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;	-  &nbsp;&nbsp;&nbsp; -  -&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; -    &nbsp;&nbsp;&nbsp;&nbsp;	&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;-  -   -  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;-&nbsp;&nbsp;|&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Mu -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - -  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;    &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;	- &nbsp;&nbsp; - &nbsp;  -  -  &nbsp;&nbsp;      &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;	na - &nbsp;&nbsp; - &nbsp;&nbsp; -   &nbsp;&nbsp;&nbsp;	tho&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; -&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;- &nbsp; -&nbsp;&nbsp;|\n\n''')
+			 
+		st.subheader("Chittai Swaram:")
+			 
+		st.markdown('''1.  P &nbsp; &nbsp; ,&nbsp; &nbsp;   ,&nbsp; &nbsp;  ,&nbsp; &nbsp;  	  ,&nbsp; &nbsp;   ,&nbsp; &nbsp;   D &nbsp; &nbsp;, &nbsp; &nbsp; 	,&nbsp; &nbsp;   , &nbsp; &nbsp; P&nbsp; &nbsp;  ,&nbsp; &nbsp;      M &nbsp; &nbsp; , &nbsp; &nbsp; R &nbsp; &nbsp; ,&nbsp; &nbsp; || &nbsp; &nbsp;G  &nbsp; &nbsp; , &nbsp; &nbsp;   , &nbsp; &nbsp;   , &nbsp; &nbsp;  	R &nbsp; &nbsp;   , &nbsp; &nbsp;  , &nbsp; &nbsp;   , &nbsp; &nbsp;  |	 &nbsp; &nbsp;S  &nbsp; &nbsp; , &nbsp; &nbsp;   ,  &nbsp; &nbsp;  , &nbsp; &nbsp;  	R &nbsp; &nbsp; ,  &nbsp; &nbsp; M &nbsp; &nbsp; , &nbsp; &nbsp; ||  (Palu)|\n\n \n\n \n\n
 			 
 			 
 			2. P  &nbsp; &nbsp; ,  &nbsp; &nbsp; D  &nbsp; &nbsp; D &nbsp; &nbsp;   	P &nbsp; &nbsp; M &nbsp; &nbsp; P &nbsp; &nbsp;  , &nbsp; &nbsp;   	P &nbsp; &nbsp; M &nbsp; &nbsp; R &nbsp; &nbsp; G &nbsp; &nbsp;	,  &nbsp; &nbsp;R  &nbsp; &nbsp;S &nbsp; &nbsp; R &nbsp; &nbsp;   || &nbsp; &nbsp;N &nbsp; &nbsp;R&nbsp; &nbsp; S&nbsp; &nbsp; N&nbsp; &nbsp;    	,&nbsp; &nbsp;  S&nbsp; &nbsp; D&nbsp; &nbsp;  ,&nbsp; &nbsp;    |	&nbsp; &nbsp;,&nbsp; &nbsp; N&nbsp; &nbsp;  ,&nbsp; &nbsp; S&nbsp; &nbsp;   	,&nbsp; &nbsp; R&nbsp; &nbsp; ,&nbsp; &nbsp;  M&nbsp; &nbsp;  ||  (Palu)|\n\n \n\n \n\n
