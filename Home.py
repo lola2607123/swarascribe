@@ -138,7 +138,7 @@ with tab2:
             st.write('**Avarohana**: ' + raag["avarohana"])
             st.write('**Time of Day**: ' + raag["time_of_day"])
             st.write('**Character**: ' + raag["character"])
-        with h2:
+        with hi2:
             st.write('**Associated Deity**: ' + raag["associated_deity_emotion"])
             st.write('**Popular Compositions**: ')
             for comp in raag["popular_compositions"]:
@@ -146,85 +146,6 @@ with tab2:
             st.write('**History**: ' + raag["history"])
             st.write('**Cultural Significance**: ' + raag["cultural_significance"])
 
-# if option=="Shankarabharanam" or option=="Dheerasankarabaranam":
-	
-# 	hi1, hi2 = st.columns(2)
-
-# 	with hi1:
-# 	    st.title(option)
-# 	    st.write('''
-# 	    **Shankarabharanam** is a major raga in Carnatic music, known for its auspicious and uplifting quality.  
-# 	    It corresponds to the Western major scale and serves as a **Melakarta raga** (29th in the system), meaning it is a parent raga from which other ragas are derived.  
-	
-# 	    **Arohana**: S R₂ G₃ M₁ P D₂ N₃ Ṡ  
-# 	    **Avarohana**: Ṡ N₃ D₂ P M₁ G₃ R₂ S  
-	
-# 	    **Musical Structure**:  
-# 	    - Shankarabharanam is a **Sampurna raga**, containing all seven notes in both ascending (arohana) and descending (avarohana) scales.  
-# 	    - The notes used are Shadjam (**S**), Chatushruti Rishabham (**R₂**), Antara Gandharam (**G₃**), Shuddha Madhyamam (**M₁**), Paṅchamam (**P**), Chatushruti Dhaivatam (**D₂**), and Kakali Nishadam (**N₃**).  
-# 	    - It is the **Shuddha Madhyamam equivalent** of the 65th Melakarta raga, Kaḷyāṇi.  
-# 	    - In Hindustani music, Shankarabharanam corresponds to **Bilaval**, while in Western music, it aligns with the **major scale**, making it widely recognized across musical traditions.  
-# 	    ''')
-	
-# 	    st.markdown("""
-# 	    **Popular Songs**:  
-# 	    - "Endaro Mahanubhavulu" by Saint Tyagaraja  
-	
-# 	    **Janya Ragas**:  
-# 	    Shankarabharanam has given rise to many Janya (derived) ragas, each bringing out different moods and interpretations.  
-# 	    - **Arabhi**
-# 	    - **Atana**
-# 	    - **Bilahari**
-# 	    - **Devagaandhaari**
-# 	    - **Jana Ranjani**
-# 	    - **Hamsadhvani**
-# 	    - **Kadanakutuhalam**
-# 	    - **Niroshta**
-# 	    - **Shuddha Sāveri**
-# 	    - **Pahādi**  
-# 	    These Janya ragas add richness to the raga's expression, allowing for diverse musical exploration within the framework of Shankarabharanam.
-# 	    """)
-	
-# 	    st.title("CHALAMELA")
-# 	    st.markdown('''
-# 	    **Ragam**: Durbar (22nd Mela Janyam)  
-# 	    **Talam**: Adi  
-	
-# 	    **Arohanam**: S R₂ M₁ P D₂ N₂ S  
-# 	    **Avarohanam**: S N₂ D₂ P M₁ R₂ G₂ G₂ R₂ S  
-	
-# 	    **Composer**: Thiruvotriyur Thyagaiyyer  
-# 	    **Notation Courtesy**: Apoorva Raghunandan  
-	
-# 	    **Pallavi**:  
-# 	    ChalamEla jEsEvurA chAla nammina nApai  
-	
-# 	    **Anupallavi**:  
-# 	    Valachiyunna nAthO vAdEla VEnu gOpAla dEva  
-	
-# 	    **Charanam**:  
-# 	    Palukumu nAthO  
-	
-# 	    **Meaning**:  
-# 	    Lord Venugopala, why do you wreak a grudge on me? Please shower your Grace upon this one who has ardently believed in you.  
-# 	    ''')
-	
-# 	with hi2:
-# 	    st.image("spec.png")
-	    
-# 	    st.title("Fun Facts About Shankarabharanam")
-# 	    st.markdown("""
-# 	    - **🧑‍🎤 King of Ragas**: Revered for its grandeur in Carnatic music.  
-# 	    - **🎵 Melakarta Raga**: 29th in the 72 Melakarta system, under the Indu Chakra.  
-# 	    - **🔢 Sampurna Scale**: Utilizes all seven notes in both ascending and descending orders.  
-# 	    - **🎶 Vadi and Samvadi**: Vadi is P (Paṅchamam); Samvadi is S (Shadjam).  
-# 	    - **🌅 Time of Performance**: Typically performed in the early evening.  
-# 	    - **🎤 Famous Compositions**: Includes 'Vatapi Ganapatim' by Muthuswami Dikshitar.  
-# 	    - **💎 Name Meaning**: Translates to 'the ornament of Shankara' (Lord Shiva).  
-# 	    - **🎶 Hindustani Equivalent**: Yaman, sharing similar moods and structures.  
-# 	    - **🩷 Emotional Range**: Expresses devotion, grandeur, and peace.  
-# 	    - **🎻 Vocal and Instrumental**: Equally popular in both vocal and instrumental performances.
-# 	    """)
 
 
 with tab3:
@@ -237,156 +158,155 @@ with tab3:
         prediction = predict_audio_class(uploaded_file)
         st.write(prediction)
 
-hi1, hi2 = st.columns(2)
-with hi1:
-	st.title("This song is in the ragam: Shankharabharanam")
-	
-	
-	st.write(''' **Arohana**: S R₂ G₃ M₁ P D₂ N₃ Ṡ   
-	**Avarohana**: Ṡ N₃ D₂ P M₁ G₃ R₂ S''')
-	        
-	st.markdown("""
-	**Notes of Shankarabharanam:**
-	- **S** (Shadjam)
-	- **R₂** (Chatushruti Rishabham)
-	- **G₃** (Antara Gandharam)
-	- **M₁** (Shuddha Madhyamam)
-	- **P** (Paṅchamam)
-	- **D₂** (Chatushruti Dhaivatam)
-	- **N₃** (Kakali Nishadam)
-	""")
-	# Title of the page
-	st.title("Janya Ragas of Shankarabharanam")
-	
-	# Display text with bullet points and emojis
-	st.markdown("""
-	Shankarabharanam has given rise to many Janya (derived) ragas, each bringing out different moods and interpretations. 
-	Some well-known Janya ragas include:
-	- 🎶 **Arabhi**
-	- 🎶 **Atana**
-	- 🎶 **Bilahari**
-	- 🎶 **Devagaandhaari**
-	- 🎶 **Jana Ranjani**
-	- 🎶 **Hamsadhvani**
-	- 🎶 **Kadanakutuhalam**
-	- 🎶 **Niroshta**
-	- 🎶 **Shuddha Sāveri**
-	- 🎶 **Pahādi**
-	
-	These Janya ragas add richness to the raga's expression, allowing for diverse musical exploration within the framework of Shankarabharanam.
-	""")
-	with st.form("my_form"):
-	        st.write("Feedback - Was I Right?")
-	        sentiment_mapping = [":material/thumb_down:", ":material/thumb_up:"]
-	        selected = st.feedback("thumbs")
-                if selected is not None:
-			st.markdown(f"You selected: {sentiment_mapping[selected]}")
-	                # Every form must have a submit button.
-	                submitted = st.form_submit_button("Submit")   
+    hi1, hi2 = st.columns(2)
+    with hi1:
+        st.title("This song is in the ragam: Shankharabharanam")
+        
+        
+        st.write(''' **Arohana**: S R₂ G₃ M₁ P D₂ N₃ Ṡ   
+        **Avarohana**: Ṡ N₃ D₂ P M₁ G₃ R₂ S''')
+                
+        st.markdown("""
+        **Notes of Shankarabharanam:**
+        - **S** (Shadjam)
+        - **R₂** (Chatushruti Rishabham)
+        - **G₃** (Antara Gandharam)
+        - **M₁** (Shuddha Madhyamam)
+        - **P** (Paṅchamam)
+        - **D₂** (Chatushruti Dhaivatam)
+        - **N₃** (Kakali Nishadam)
+        """)
+        # Title of the page
+        st.title("Janya Ragas of Shankarabharanam")
+        
+        # Display text with bullet points and emojis
+        st.markdown("""
+        Shankarabharanam has given rise to many Janya (derived) ragas, each bringing out different moods and interpretations. 
+        Some well-known Janya ragas include:
+        - 🎶 **Arabhi**
+        - 🎶 **Atana**
+        - 🎶 **Bilahari**
+        - 🎶 **Devagaandhaari**
+        - 🎶 **Jana Ranjani**
+        - 🎶 **Hamsadhvani**
+        - 🎶 **Kadanakutuhalam**
+        - 🎶 **Niroshta**
+        - 🎶 **Shuddha Sāveri**
+        - 🎶 **Pahādi**
+        
+        These Janya ragas add richness to the raga's expression, allowing for diverse musical exploration within the framework of Shankarabharanam.
+        """)
+        #with st.form("my_form"):
+            #st.write("Feedback - Was I Right?")
+            #sentiment_mapping = [":material/thumb_down:", ":material/thumb_up:"]
+            #selected = st.feedback("thumbs")
+            #if selected is not None:
+                #st.markdown(f"You selected: {sentiment_mapping[selected]}")
+	        #submitted = st.form_submit_button("Submit")   
 	    
         with hi2:
-                st.image("spec.png")
+            st.image("spec.png")
 	
-                st.title('Fun Facts About Shankarabharanam')
+            st.title('Fun Facts About Shankarabharanam')
 	
-		# Add an introductory text
-		st.markdown("""
-		Shankarabharanam is a majestic raga in Carnatic music, known for its grandeur and versatility. Here are some interesting facts about this raga:
-		""")
-		
-		# List of facts
-		facts = [
-		        ("🧑‍🎤 **King of Ragas**", "Shankarabharanam is considered one of the most majestic and revered ragas in Carnatic music."),
-		        ("🎵 **Melakarta Raga**", "It is the 29th raga in the 72 Melakarta system and falls under the Indu Chakra."),
-		        ("🔢 **Sampurna Scale**", "Shankarabharanam uses all seven notes in both ascending and descending scales: S, R₂, G₃, M₁, P, D₂, N₃."),
-		        ("🎶 **Vadi and Samvadi**", "The Vadi (most important note) is P (Paṅchamam), and the Samvadi is S (Shadjam)."),
-		        ("🌅 **Time of Performance**", "Typically performed in the early evening, evoking serenity and devotion."),
-		        ("🎤 **Famous Compositions**", "Known for iconic compositions like 'Vatapi Ganapatim' by Muthuswami Dikshitar."),
-		        ("💎 **Name Meaning**", "Shankarabharanam translates to 'the ornament of Shankara' (Lord Shiva)."),
-		        ("🎶 **Hindustani Equivalent**", "The raga's counterpart in Hindustani music is Yaman, with a similar mood and structure."),
-		        ("🩷 **Emotional Range**", "Shankarabharanam expresses devotion, grandeur, and peacefulness, making it versatile for performances."),
-		        ("🎻 **Vocal and Instrumental**", "Popular in both vocal and instrumental renditions, especially in classical concerts.")
-		]
-		
-		# Loop through the list and present each fact
-		for fact in facts:
-		        st.markdown(f"**{fact[0]}**: {fact[1]}")
-		
-		st.header("CHALAMELA")
-		 
-		st.markdown('''Ragam: Durbar (22nd Mela Janyam)
-		Talam: Adi
-			 
-			Arohanam:          S R2 M1 P D2 N2 S            	||
-			Avarohanam:  	S N2 D2 P M1 R2 G2 G2 R2 S    	||
-			 
-			Composer:           Thiruvotriyur Thyagaiyyer
-			Notation Courtesy: Apoorva Raghunandan
-			 
-			Pallavi: ChalamEla jEsEvurA chAla nammina nApai
-			 
-			Anupallavi: Valachiyunna nAthO vAdEla VEnu gOpAla dEva
-			 
-			Charanam: Palukumu nAthO
-			 
-			Meaning: Lord Venugopala, why do you wreak a grudge on me? Please shower your Grace upon this one who has ardently believed in you.''')
-			 
-			 
-		st.subheader("Pallavi:")
-			 
-		st.markdown('''P &nbsp; &nbsp; M &nbsp; &nbsp; R &nbsp; &nbsp;,  &nbsp; &nbsp;    G &nbsp; &nbsp; , &nbsp; &nbsp;  G &nbsp; &nbsp; , &nbsp; &nbsp;       R &nbsp; &nbsp; S &nbsp; &nbsp; R &nbsp; &nbsp; , &nbsp; &nbsp;        N &nbsp; &nbsp; R &nbsp; &nbsp; S  &nbsp; &nbsp; N &nbsp; &nbsp; | D &nbsp; &nbsp; P &nbsp; &nbsp; D &nbsp; &nbsp; N &nbsp; &nbsp;  	S &nbsp; &nbsp; R &nbsp; &nbsp; S &nbsp; &nbsp; R  &nbsp; &nbsp; ||&nbsp; &nbsp;	P &nbsp; &nbsp; , &nbsp; &nbsp; M &nbsp; &nbsp; R  &nbsp; &nbsp;  	G &nbsp; &nbsp; R &nbsp; &nbsp; S &nbsp; &nbsp; R &nbsp; &nbsp; ||''')
-			                
-		st.markdown('''Cha- &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;la - &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 	 &nbsp; &nbsp;     me-  &nbsp; &nbsp;   &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 	la -    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 	je &nbsp; &nbsp;-  &nbsp; &nbsp;-  &nbsp; &nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;se&nbsp; &nbsp; -    &nbsp; &nbsp;	- &nbsp; &nbsp; - &nbsp; &nbsp; - &nbsp; &nbsp; -  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;    	vu &nbsp; &nbsp; -&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;- &nbsp; &nbsp;ra &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;    	- &nbsp; &nbsp; - &nbsp; &nbsp; - &nbsp; &nbsp; -&nbsp; &nbsp;|\n\n''')
-			 
-			 
-		st.markdown('''P &nbsp; &nbsp; M  &nbsp; &nbsp; R &nbsp; &nbsp;G  &nbsp; &nbsp;	R &nbsp; &nbsp;S &nbsp; &nbsp;R&nbsp; &nbsp; M &nbsp; &nbsp; || &nbsp; &nbsp;  P &nbsp; &nbsp;M&nbsp; &nbsp; , &nbsp; &nbsp;P  &nbsp; &nbsp;   	D&nbsp; &nbsp; N&nbsp; &nbsp; S&nbsp; &nbsp; R &nbsp; &nbsp;|| &nbsp; &nbsp;N&nbsp; &nbsp; N &nbsp; &nbsp;, &nbsp; &nbsp; D  &nbsp; &nbsp; 	D&nbsp; &nbsp; P &nbsp; &nbsp;D&nbsp; &nbsp; N &nbsp; &nbsp; | &nbsp; &nbsp; P &nbsp; &nbsp; M &nbsp; &nbsp;R &nbsp; &nbsp;G   &nbsp; &nbsp; 	G &nbsp; &nbsp;R &nbsp; &nbsp;S &nbsp; &nbsp;R &nbsp; &nbsp;||\n\n''')
-		st.markdown('''Cha  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;- -  &nbsp; &nbsp;&nbsp; &nbsp; -   	-   &nbsp; &nbsp;&nbsp; &nbsp;- la -   &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;      - nam - -    &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;	-  -   -  -| &nbsp; &nbsp;&nbsp; &nbsp;Mi -  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;- na    &nbsp; &nbsp;&nbsp; &nbsp;	- &nbsp; &nbsp;&nbsp; &nbsp;  -  na -  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 	-  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; -  -  -      	pai  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;- - - &nbsp; &nbsp;&nbsp; &nbsp;|\n\n''')
-			 
-		st.subheader("Anupallavi:")
-			
-			 
-		st.markdown('''D&nbsp; &nbsp; N&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp;   	M&nbsp; &nbsp; P&nbsp; &nbsp; R&nbsp; &nbsp; M&nbsp; &nbsp;  	R&nbsp; &nbsp; P&nbsp; &nbsp; M&nbsp; &nbsp; R&nbsp; &nbsp;   	G &nbsp; &nbsp;G &nbsp; &nbsp;R&nbsp; &nbsp; S&nbsp; &nbsp; ||&nbsp; &nbsp;M&nbsp; &nbsp; M&nbsp; &nbsp; R&nbsp; &nbsp; P&nbsp; &nbsp;   	P&nbsp; &nbsp; M&nbsp; &nbsp; D&nbsp; &nbsp; D&nbsp; &nbsp;   |  &nbsp; &nbsp; P&nbsp; &nbsp; M&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp;    	N &nbsp; &nbsp;N &nbsp; &nbsp;S&nbsp; &nbsp;  , &nbsp; &nbsp;||\n\n''')
-		st.markdown('''Va- &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;-   -     	-  -  &nbsp; &nbsp;&nbsp; &nbsp;  la -    &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;	-   -  -  -    	chi - &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; -   -|  &nbsp; &nbsp;&nbsp; &nbsp;yu -  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  -   -   	-   &nbsp; &nbsp;&nbsp; &nbsp; -  na -  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  	-  na -  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  -     	 &nbsp; &nbsp;&nbsp; &nbsp;tho -  &nbsp; &nbsp;&nbsp; &nbsp;- &nbsp; &nbsp;&nbsp; &nbsp; - &nbsp; &nbsp;&nbsp; &nbsp;|\n\n''')
-			 
-		st.markdown('''P&nbsp; &nbsp; D&nbsp; &nbsp; P&nbsp; &nbsp; S&nbsp; &nbsp;          N&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; S&nbsp; &nbsp;   	R &nbsp; &nbsp;G&nbsp; &nbsp; G&nbsp; &nbsp; R&nbsp; &nbsp;    	S&nbsp; &nbsp; N&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; ||&nbsp; &nbsp;S &nbsp; &nbsp; ,&nbsp; &nbsp;   ,&nbsp; &nbsp;   P&nbsp; &nbsp;     	, &nbsp; &nbsp;  , &nbsp; &nbsp;  D&nbsp; &nbsp; N&nbsp; &nbsp;  |   &nbsp; &nbsp;P&nbsp; &nbsp; M&nbsp; &nbsp; R&nbsp; &nbsp; G&nbsp; &nbsp;    	G&nbsp; &nbsp; R&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; ||\n\n''')
-		st.markdown('''Va &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; -  pa  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  	-    -   la -   &nbsp; &nbsp;&nbsp; &nbsp; 	-    -  &nbsp; &nbsp;&nbsp; &nbsp; de -   &nbsp; &nbsp;&nbsp; &nbsp;   	- va  &nbsp; &nbsp;&nbsp; &nbsp;-  - &nbsp; &nbsp;&nbsp; &nbsp;|\n\n''')
-			
-		st.subheader("Mukthayi Swaram:")
-			
-			 
-		st.markdown('''P &nbsp; &nbsp;M&nbsp; &nbsp; R&nbsp; &nbsp; G&nbsp; &nbsp;    	R &nbsp; &nbsp;S&nbsp; &nbsp; N&nbsp; &nbsp; R&nbsp; &nbsp;  	 S&nbsp; &nbsp; R&nbsp; &nbsp; N&nbsp; &nbsp; S&nbsp; &nbsp;  	  D &nbsp; &nbsp;P&nbsp; &nbsp; D&nbsp; &nbsp; N&nbsp; &nbsp; ||\n\n S&nbsp; &nbsp; R&nbsp; &nbsp; S&nbsp; &nbsp; M&nbsp; &nbsp;      	R &nbsp; &nbsp;P&nbsp; &nbsp; M&nbsp; &nbsp; D&nbsp; &nbsp;  |	&nbsp; &nbsp;P &nbsp; &nbsp;D&nbsp; &nbsp; M&nbsp; &nbsp; &nbsp; &nbsp;P&nbsp; &nbsp;   	D N S ,  ||\n\n''')
-			 
-			
-		st.markdown('''D&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp; N&nbsp; &nbsp;       S &nbsp; &nbsp; ,&nbsp; &nbsp;  R&nbsp; &nbsp; S&nbsp; &nbsp;   	R&nbsp; &nbsp; G&nbsp; &nbsp; G&nbsp; &nbsp; R&nbsp; &nbsp;  	S&nbsp; &nbsp; R&nbsp; &nbsp; N&nbsp; &nbsp; ,&nbsp; &nbsp;  ||\n\n D&nbsp; &nbsp;  P&nbsp; &nbsp;   S&nbsp; &nbsp;  S&nbsp; &nbsp;        	&nbsp; &nbsp; , &nbsp; &nbsp;  P &nbsp; &nbsp;  P&nbsp; &nbsp;   ,&nbsp; &nbsp;    |&nbsp; &nbsp; 	D&nbsp; &nbsp;  P &nbsp; &nbsp; M &nbsp; &nbsp; R&nbsp; &nbsp;    	G&nbsp; &nbsp;  R&nbsp; &nbsp;  S&nbsp; &nbsp;  R&nbsp; &nbsp;   || (Cha)|\n\n''')
-			 
-			
-			 
-			 
-		st.subheader("Charanam:")
-			 
-		st.markdown('''P&nbsp; &nbsp;  ,&nbsp; &nbsp;   P&nbsp; &nbsp; ,&nbsp; &nbsp;     	,&nbsp; &nbsp;  D&nbsp; &nbsp; P &nbsp; &nbsp;M&nbsp; &nbsp;       	P&nbsp; &nbsp; D&nbsp; &nbsp; ,&nbsp; &nbsp;  P&nbsp; &nbsp;   	D&nbsp; &nbsp; ,&nbsp; &nbsp;  D&nbsp; &nbsp; R&nbsp; &nbsp;  ||&nbsp; &nbsp;N &nbsp; &nbsp; ,&nbsp; &nbsp; N&nbsp; &nbsp;  ,&nbsp; &nbsp;     	D&nbsp; &nbsp; ,&nbsp; &nbsp;   P&nbsp; &nbsp;  ,&nbsp; &nbsp;    |   	&nbsp; &nbsp;M &nbsp; &nbsp;R &nbsp; &nbsp;G &nbsp; &nbsp;, &nbsp; &nbsp;  	R&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; M&nbsp; &nbsp; ||   |\n\n''')
-		st.markdown('''Pa -&nbsp;&nbsp;&nbsp; &nbsp;  &nbsp;  lu -  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 	&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;- &nbsp;&nbsp; ku - &nbsp;&nbsp;&nbsp; -   &nbsp;&nbsp;     &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;	-  &nbsp;&nbsp;&nbsp; -  -&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; -    &nbsp;&nbsp;&nbsp;&nbsp;	&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;-  -   -  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;-&nbsp;&nbsp;|&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Mu -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - -  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;    &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;	- &nbsp;&nbsp; - &nbsp;  -  -  &nbsp;&nbsp;      &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;	na - &nbsp;&nbsp; - &nbsp;&nbsp; -   &nbsp;&nbsp;&nbsp;	tho&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; -&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;- &nbsp; -&nbsp;&nbsp;|\n\n''')
-			 
-		st.subheader("Chittai Swaram:")
-			 
-		st.markdown('''1.  P &nbsp; &nbsp; ,&nbsp; &nbsp;   ,&nbsp; &nbsp;  ,&nbsp; &nbsp;  	  ,&nbsp; &nbsp;   ,&nbsp; &nbsp;   D &nbsp; &nbsp;, &nbsp; &nbsp; 	,&nbsp; &nbsp;   , &nbsp; &nbsp; P&nbsp; &nbsp;  ,&nbsp; &nbsp;      M &nbsp; &nbsp; , &nbsp; &nbsp; R &nbsp; &nbsp; ,&nbsp; &nbsp; || &nbsp; &nbsp;G  &nbsp; &nbsp; , &nbsp; &nbsp;   , &nbsp; &nbsp;   , &nbsp; &nbsp;  	R &nbsp; &nbsp;   , &nbsp; &nbsp;  , &nbsp; &nbsp;   , &nbsp; &nbsp;  |	 &nbsp; &nbsp;S  &nbsp; &nbsp; , &nbsp; &nbsp;   ,  &nbsp; &nbsp;  , &nbsp; &nbsp;  	R &nbsp; &nbsp; ,  &nbsp; &nbsp; M &nbsp; &nbsp; , &nbsp; &nbsp; ||  (Palu)|\n\n \n\n \n\n
-			 
-			 
-			2. P  &nbsp; &nbsp; ,  &nbsp; &nbsp; D  &nbsp; &nbsp; D &nbsp; &nbsp;   	P &nbsp; &nbsp; M &nbsp; &nbsp; P &nbsp; &nbsp;  , &nbsp; &nbsp;   	P &nbsp; &nbsp; M &nbsp; &nbsp; R &nbsp; &nbsp; G &nbsp; &nbsp;	,  &nbsp; &nbsp;R  &nbsp; &nbsp;S &nbsp; &nbsp; R &nbsp; &nbsp;   || &nbsp; &nbsp;N &nbsp; &nbsp;R&nbsp; &nbsp; S&nbsp; &nbsp; N&nbsp; &nbsp;    	,&nbsp; &nbsp;  S&nbsp; &nbsp; D&nbsp; &nbsp;  ,&nbsp; &nbsp;    |	&nbsp; &nbsp;,&nbsp; &nbsp; N&nbsp; &nbsp;  ,&nbsp; &nbsp; S&nbsp; &nbsp;   	,&nbsp; &nbsp; R&nbsp; &nbsp; ,&nbsp; &nbsp;  M&nbsp; &nbsp;  ||  (Palu)|\n\n \n\n \n\n
-			 
-			 
-			3. D&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp; M&nbsp; &nbsp;  	P&nbsp; &nbsp; R&nbsp; &nbsp; M&nbsp; &nbsp; P&nbsp; &nbsp;   	S &nbsp; &nbsp;R&nbsp; &nbsp; M&nbsp; &nbsp; P&nbsp; &nbsp; 	M&nbsp; &nbsp; R&nbsp; &nbsp; G&nbsp; &nbsp; R&nbsp; &nbsp; || &nbsp; &nbsp;S&nbsp; &nbsp; R&nbsp; &nbsp; N &nbsp; &nbsp;S &nbsp; &nbsp;   	D&nbsp; &nbsp; N&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp;   |	&nbsp; &nbsp;P&nbsp; &nbsp; D&nbsp; &nbsp; N&nbsp; &nbsp; S&nbsp; &nbsp; 	R&nbsp; &nbsp; M&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp; ||\n\n
-			 
-			S&nbsp; &nbsp; R&nbsp; &nbsp; M&nbsp; &nbsp; P&nbsp; &nbsp;   	D &nbsp; &nbsp;M&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp;  	N &nbsp; &nbsp;S &nbsp; &nbsp;P&nbsp; &nbsp; D&nbsp; &nbsp; 	N&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; N&nbsp; &nbsp;  | &nbsp; &nbsp;G&nbsp; &nbsp; R&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp;   	N &nbsp; &nbsp;R&nbsp; &nbsp; S&nbsp; &nbsp; N&nbsp; &nbsp;   |	&nbsp; &nbsp;S&nbsp; &nbsp; D&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp; 	M&nbsp; &nbsp; P&nbsp; &nbsp; R&nbsp; &nbsp; M&nbsp; &nbsp; ||   (Palu)|\n\n \n\n \n\n
-			 
-			 
-			4. D &nbsp; &nbsp;N&nbsp; &nbsp; S&nbsp; &nbsp; P&nbsp; &nbsp;          , &nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp; P&nbsp; &nbsp;     	M&nbsp; &nbsp; R&nbsp; &nbsp; G&nbsp; &nbsp; G&nbsp; &nbsp;      R&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; N&nbsp; &nbsp; || &nbsp; &nbsp;S &nbsp; &nbsp;, &nbsp; &nbsp;  , &nbsp; &nbsp; D &nbsp; &nbsp;     	D&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp; N&nbsp; &nbsp;   |	 &nbsp; &nbsp;S &nbsp; &nbsp;N&nbsp; &nbsp; ,&nbsp; &nbsp; S&nbsp; &nbsp;   	  R&nbsp; &nbsp; ,&nbsp; &nbsp; M&nbsp; &nbsp; P&nbsp; &nbsp;   ||\n\n
-			 
-			 D &nbsp; &nbsp;,&nbsp; &nbsp;  N&nbsp; &nbsp;  S&nbsp; &nbsp;     	R&nbsp; &nbsp; S&nbsp; &nbsp; N&nbsp; &nbsp;  ,&nbsp; &nbsp;     	,&nbsp; &nbsp;  S&nbsp; &nbsp; D&nbsp; &nbsp; P&nbsp; &nbsp; 	   M&nbsp; &nbsp; D&nbsp; &nbsp; P&nbsp; &nbsp; M&nbsp; &nbsp; ||&nbsp; &nbsp;G  &nbsp; &nbsp;,&nbsp; &nbsp;  R&nbsp; &nbsp; R&nbsp; &nbsp;      	S&nbsp; &nbsp;  ,&nbsp; &nbsp;  N&nbsp; &nbsp; S&nbsp; &nbsp;    |	&nbsp; &nbsp;R &nbsp; &nbsp;M &nbsp; &nbsp;P&nbsp; &nbsp;M &nbsp; &nbsp;     &nbsp; &nbsp;P&nbsp; &nbsp;  ,&nbsp; &nbsp;  ,&nbsp; &nbsp;   ,&nbsp; &nbsp;   ||\n\n
-			 
-			 D&nbsp; &nbsp; P&nbsp; &nbsp; M&nbsp; &nbsp; R&nbsp; &nbsp;      	G &nbsp; &nbsp;R&nbsp; &nbsp; S&nbsp; &nbsp;  ,&nbsp; &nbsp;    	R &nbsp; &nbsp;M&nbsp; &nbsp; P&nbsp; &nbsp; R&nbsp; &nbsp;   	,&nbsp; &nbsp;  M&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp;  || &nbsp; &nbsp; M &nbsp; &nbsp; ,&nbsp; &nbsp;  P&nbsp; &nbsp; D &nbsp; &nbsp;     	N&nbsp; &nbsp; S&nbsp; &nbsp; P&nbsp; &nbsp;  ,&nbsp; &nbsp;   | 	D&nbsp; &nbsp; N&nbsp; &nbsp;  S&nbsp; &nbsp; R&nbsp; &nbsp;      N&nbsp; &nbsp;  ,&nbsp; &nbsp;  S&nbsp; &nbsp; R&nbsp; &nbsp;  ||\n\n
-			 
-			G &nbsp; &nbsp; ,&nbsp; &nbsp;   G&nbsp; &nbsp; ,&nbsp; &nbsp;      	R&nbsp; &nbsp; S&nbsp; &nbsp; N&nbsp; &nbsp;  ,&nbsp; &nbsp;    	N&nbsp; &nbsp;  ,&nbsp; &nbsp;   D &nbsp; &nbsp;P &nbsp; &nbsp; 	D&nbsp; &nbsp; N&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp;  ||   &nbsp; &nbsp;N &nbsp; &nbsp; ,&nbsp; &nbsp;  S&nbsp; &nbsp; P&nbsp; &nbsp;       	, &nbsp; &nbsp; D &nbsp; &nbsp;M &nbsp; &nbsp;, &nbsp; &nbsp;  | 	&nbsp; &nbsp;P &nbsp; &nbsp;R &nbsp; &nbsp;, &nbsp; &nbsp; M&nbsp; &nbsp;    	S &nbsp; &nbsp; ,&nbsp; &nbsp;  R&nbsp; &nbsp; M&nbsp; &nbsp; |  (Palu)''')
+            # Add an introductory text
+            st.markdown("""
+            Shankarabharanam is a majestic raga in Carnatic music, known for its grandeur and versatility. Here are some interesting facts about this raga:
+            """)
+            
+            # List of facts
+            facts = [
+                    ("🧑‍🎤 **King of Ragas**", "Shankarabharanam is considered one of the most majestic and revered ragas in Carnatic music."),
+                    ("🎵 **Melakarta Raga**", "It is the 29th raga in the 72 Melakarta system and falls under the Indu Chakra."),
+                    ("🔢 **Sampurna Scale**", "Shankarabharanam uses all seven notes in both ascending and descending scales: S, R₂, G₃, M₁, P, D₂, N₃."),
+                    ("🎶 **Vadi and Samvadi**", "The Vadi (most important note) is P (Paṅchamam), and the Samvadi is S (Shadjam)."),
+                    ("🌅 **Time of Performance**", "Typically performed in the early evening, evoking serenity and devotion."),
+                    ("🎤 **Famous Compositions**", "Known for iconic compositions like 'Vatapi Ganapatim' by Muthuswami Dikshitar."),
+                    ("💎 **Name Meaning**", "Shankarabharanam translates to 'the ornament of Shankara' (Lord Shiva)."),
+                    ("🎶 **Hindustani Equivalent**", "The raga's counterpart in Hindustani music is Yaman, with a similar mood and structure."),
+                    ("🩷 **Emotional Range**", "Shankarabharanam expresses devotion, grandeur, and peacefulness, making it versatile for performances."),
+                    ("🎻 **Vocal and Instrumental**", "Popular in both vocal and instrumental renditions, especially in classical concerts.")
+            ]
+            
+            # Loop through the list and present each fact
+            for fact in facts:
+                    st.markdown(f"**{fact[0]}**: {fact[1]}")
+            
+            st.header("CHALAMELA")
+            
+            st.markdown('''Ragam: Durbar (22nd Mela Janyam)
+            Talam: Adi
+                
+                Arohanam:          S R2 M1 P D2 N2 S            	||
+                Avarohanam:  	S N2 D2 P M1 R2 G2 G2 R2 S    	||
+                
+                Composer:           Thiruvotriyur Thyagaiyyer
+                Notation Courtesy: Apoorva Raghunandan
+                
+                Pallavi: ChalamEla jEsEvurA chAla nammina nApai
+                
+                Anupallavi: Valachiyunna nAthO vAdEla VEnu gOpAla dEva
+                
+                Charanam: Palukumu nAthO
+                
+                Meaning: Lord Venugopala, why do you wreak a grudge on me? Please shower your Grace upon this one who has ardently believed in you.''')
+                
+                
+            st.subheader("Pallavi:")
+                
+            st.markdown('''P &nbsp; &nbsp; M &nbsp; &nbsp; R &nbsp; &nbsp;,  &nbsp; &nbsp;    G &nbsp; &nbsp; , &nbsp; &nbsp;  G &nbsp; &nbsp; , &nbsp; &nbsp;       R &nbsp; &nbsp; S &nbsp; &nbsp; R &nbsp; &nbsp; , &nbsp; &nbsp;        N &nbsp; &nbsp; R &nbsp; &nbsp; S  &nbsp; &nbsp; N &nbsp; &nbsp; | D &nbsp; &nbsp; P &nbsp; &nbsp; D &nbsp; &nbsp; N &nbsp; &nbsp;  	S &nbsp; &nbsp; R &nbsp; &nbsp; S &nbsp; &nbsp; R  &nbsp; &nbsp; ||&nbsp; &nbsp;	P &nbsp; &nbsp; , &nbsp; &nbsp; M &nbsp; &nbsp; R  &nbsp; &nbsp;  	G &nbsp; &nbsp; R &nbsp; &nbsp; S &nbsp; &nbsp; R &nbsp; &nbsp; ||''')
+                                
+            st.markdown('''Cha- &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;la - &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 	 &nbsp; &nbsp;     me-  &nbsp; &nbsp;   &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 	la -    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 	je &nbsp; &nbsp;-  &nbsp; &nbsp;-  &nbsp; &nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;se&nbsp; &nbsp; -    &nbsp; &nbsp;	- &nbsp; &nbsp; - &nbsp; &nbsp; - &nbsp; &nbsp; -  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;    	vu &nbsp; &nbsp; -&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;- &nbsp; &nbsp;ra &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;    	- &nbsp; &nbsp; - &nbsp; &nbsp; - &nbsp; &nbsp; -&nbsp; &nbsp;|\n\n''')
+                
+                
+            st.markdown('''P &nbsp; &nbsp; M  &nbsp; &nbsp; R &nbsp; &nbsp;G  &nbsp; &nbsp;	R &nbsp; &nbsp;S &nbsp; &nbsp;R&nbsp; &nbsp; M &nbsp; &nbsp; || &nbsp; &nbsp;  P &nbsp; &nbsp;M&nbsp; &nbsp; , &nbsp; &nbsp;P  &nbsp; &nbsp;   	D&nbsp; &nbsp; N&nbsp; &nbsp; S&nbsp; &nbsp; R &nbsp; &nbsp;|| &nbsp; &nbsp;N&nbsp; &nbsp; N &nbsp; &nbsp;, &nbsp; &nbsp; D  &nbsp; &nbsp; 	D&nbsp; &nbsp; P &nbsp; &nbsp;D&nbsp; &nbsp; N &nbsp; &nbsp; | &nbsp; &nbsp; P &nbsp; &nbsp; M &nbsp; &nbsp;R &nbsp; &nbsp;G   &nbsp; &nbsp; 	G &nbsp; &nbsp;R &nbsp; &nbsp;S &nbsp; &nbsp;R &nbsp; &nbsp;||\n\n''')
+            st.markdown('''Cha  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;- -  &nbsp; &nbsp;&nbsp; &nbsp; -   	-   &nbsp; &nbsp;&nbsp; &nbsp;- la -   &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;      - nam - -    &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;	-  -   -  -| &nbsp; &nbsp;&nbsp; &nbsp;Mi -  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;- na    &nbsp; &nbsp;&nbsp; &nbsp;	- &nbsp; &nbsp;&nbsp; &nbsp;  -  na -  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 	-  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; -  -  -      	pai  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;- - - &nbsp; &nbsp;&nbsp; &nbsp;|\n\n''')
+                
+            st.subheader("Anupallavi:")
+                
+                
+            st.markdown('''D&nbsp; &nbsp; N&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp;   	M&nbsp; &nbsp; P&nbsp; &nbsp; R&nbsp; &nbsp; M&nbsp; &nbsp;  	R&nbsp; &nbsp; P&nbsp; &nbsp; M&nbsp; &nbsp; R&nbsp; &nbsp;   	G &nbsp; &nbsp;G &nbsp; &nbsp;R&nbsp; &nbsp; S&nbsp; &nbsp; ||&nbsp; &nbsp;M&nbsp; &nbsp; M&nbsp; &nbsp; R&nbsp; &nbsp; P&nbsp; &nbsp;   	P&nbsp; &nbsp; M&nbsp; &nbsp; D&nbsp; &nbsp; D&nbsp; &nbsp;   |  &nbsp; &nbsp; P&nbsp; &nbsp; M&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp;    	N &nbsp; &nbsp;N &nbsp; &nbsp;S&nbsp; &nbsp;  , &nbsp; &nbsp;||\n\n''')
+            st.markdown('''Va- &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;-   -     	-  -  &nbsp; &nbsp;&nbsp; &nbsp;  la -    &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;	-   -  -  -    	chi - &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; -   -|  &nbsp; &nbsp;&nbsp; &nbsp;yu -  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  -   -   	-   &nbsp; &nbsp;&nbsp; &nbsp; -  na -  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  	-  na -  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  -     	 &nbsp; &nbsp;&nbsp; &nbsp;tho -  &nbsp; &nbsp;&nbsp; &nbsp;- &nbsp; &nbsp;&nbsp; &nbsp; - &nbsp; &nbsp;&nbsp; &nbsp;|\n\n''')
+                
+            st.markdown('''P&nbsp; &nbsp; D&nbsp; &nbsp; P&nbsp; &nbsp; S&nbsp; &nbsp;          N&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; S&nbsp; &nbsp;   	R &nbsp; &nbsp;G&nbsp; &nbsp; G&nbsp; &nbsp; R&nbsp; &nbsp;    	S&nbsp; &nbsp; N&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; ||&nbsp; &nbsp;S &nbsp; &nbsp; ,&nbsp; &nbsp;   ,&nbsp; &nbsp;   P&nbsp; &nbsp;     	, &nbsp; &nbsp;  , &nbsp; &nbsp;  D&nbsp; &nbsp; N&nbsp; &nbsp;  |   &nbsp; &nbsp;P&nbsp; &nbsp; M&nbsp; &nbsp; R&nbsp; &nbsp; G&nbsp; &nbsp;    	G&nbsp; &nbsp; R&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; ||\n\n''')
+            st.markdown('''Va &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; -  pa  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  	-    -   la -   &nbsp; &nbsp;&nbsp; &nbsp; 	-    -  &nbsp; &nbsp;&nbsp; &nbsp; de -   &nbsp; &nbsp;&nbsp; &nbsp;   	- va  &nbsp; &nbsp;&nbsp; &nbsp;-  - &nbsp; &nbsp;&nbsp; &nbsp;|\n\n''')
+                
+            st.subheader("Mukthayi Swaram:")
+                
+                
+            st.markdown('''P &nbsp; &nbsp;M&nbsp; &nbsp; R&nbsp; &nbsp; G&nbsp; &nbsp;    	R &nbsp; &nbsp;S&nbsp; &nbsp; N&nbsp; &nbsp; R&nbsp; &nbsp;  	 S&nbsp; &nbsp; R&nbsp; &nbsp; N&nbsp; &nbsp; S&nbsp; &nbsp;  	  D &nbsp; &nbsp;P&nbsp; &nbsp; D&nbsp; &nbsp; N&nbsp; &nbsp; ||\n\n S&nbsp; &nbsp; R&nbsp; &nbsp; S&nbsp; &nbsp; M&nbsp; &nbsp;      	R &nbsp; &nbsp;P&nbsp; &nbsp; M&nbsp; &nbsp; D&nbsp; &nbsp;  |	&nbsp; &nbsp;P &nbsp; &nbsp;D&nbsp; &nbsp; M&nbsp; &nbsp; &nbsp; &nbsp;P&nbsp; &nbsp;   	D N S ,  ||\n\n''')
+                
+                
+            st.markdown('''D&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp; N&nbsp; &nbsp;       S &nbsp; &nbsp; ,&nbsp; &nbsp;  R&nbsp; &nbsp; S&nbsp; &nbsp;   	R&nbsp; &nbsp; G&nbsp; &nbsp; G&nbsp; &nbsp; R&nbsp; &nbsp;  	S&nbsp; &nbsp; R&nbsp; &nbsp; N&nbsp; &nbsp; ,&nbsp; &nbsp;  ||\n\n D&nbsp; &nbsp;  P&nbsp; &nbsp;   S&nbsp; &nbsp;  S&nbsp; &nbsp;        	&nbsp; &nbsp; , &nbsp; &nbsp;  P &nbsp; &nbsp;  P&nbsp; &nbsp;   ,&nbsp; &nbsp;    |&nbsp; &nbsp; 	D&nbsp; &nbsp;  P &nbsp; &nbsp; M &nbsp; &nbsp; R&nbsp; &nbsp;    	G&nbsp; &nbsp;  R&nbsp; &nbsp;  S&nbsp; &nbsp;  R&nbsp; &nbsp;   || (Cha)|\n\n''')
+                
+                
+                
+                
+            st.subheader("Charanam:")
+                
+            st.markdown('''P&nbsp; &nbsp;  ,&nbsp; &nbsp;   P&nbsp; &nbsp; ,&nbsp; &nbsp;     	,&nbsp; &nbsp;  D&nbsp; &nbsp; P &nbsp; &nbsp;M&nbsp; &nbsp;       	P&nbsp; &nbsp; D&nbsp; &nbsp; ,&nbsp; &nbsp;  P&nbsp; &nbsp;   	D&nbsp; &nbsp; ,&nbsp; &nbsp;  D&nbsp; &nbsp; R&nbsp; &nbsp;  ||&nbsp; &nbsp;N &nbsp; &nbsp; ,&nbsp; &nbsp; N&nbsp; &nbsp;  ,&nbsp; &nbsp;     	D&nbsp; &nbsp; ,&nbsp; &nbsp;   P&nbsp; &nbsp;  ,&nbsp; &nbsp;    |   	&nbsp; &nbsp;M &nbsp; &nbsp;R &nbsp; &nbsp;G &nbsp; &nbsp;, &nbsp; &nbsp;  	R&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; M&nbsp; &nbsp; ||   |\n\n''')
+            st.markdown('''Pa -&nbsp;&nbsp;&nbsp; &nbsp;  &nbsp;  lu -  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 	&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;- &nbsp;&nbsp; ku - &nbsp;&nbsp;&nbsp; -   &nbsp;&nbsp;     &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;	-  &nbsp;&nbsp;&nbsp; -  -&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; -    &nbsp;&nbsp;&nbsp;&nbsp;	&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;-  -   -  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;-&nbsp;&nbsp;|&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Mu -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - -  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;    &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;	- &nbsp;&nbsp; - &nbsp;  -  -  &nbsp;&nbsp;      &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;	na - &nbsp;&nbsp; - &nbsp;&nbsp; -   &nbsp;&nbsp;&nbsp;	tho&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; -&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;- &nbsp; -&nbsp;&nbsp;|\n\n''')
+                
+            st.subheader("Chittai Swaram:")
+                
+            st.markdown('''1.  P &nbsp; &nbsp; ,&nbsp; &nbsp;   ,&nbsp; &nbsp;  ,&nbsp; &nbsp;  	  ,&nbsp; &nbsp;   ,&nbsp; &nbsp;   D &nbsp; &nbsp;, &nbsp; &nbsp; 	,&nbsp; &nbsp;   , &nbsp; &nbsp; P&nbsp; &nbsp;  ,&nbsp; &nbsp;      M &nbsp; &nbsp; , &nbsp; &nbsp; R &nbsp; &nbsp; ,&nbsp; &nbsp; || &nbsp; &nbsp;G  &nbsp; &nbsp; , &nbsp; &nbsp;   , &nbsp; &nbsp;   , &nbsp; &nbsp;  	R &nbsp; &nbsp;   , &nbsp; &nbsp;  , &nbsp; &nbsp;   , &nbsp; &nbsp;  |	 &nbsp; &nbsp;S  &nbsp; &nbsp; , &nbsp; &nbsp;   ,  &nbsp; &nbsp;  , &nbsp; &nbsp;  	R &nbsp; &nbsp; ,  &nbsp; &nbsp; M &nbsp; &nbsp; , &nbsp; &nbsp; ||  (Palu)|\n\n \n\n \n\n
+                
+                
+                2. P  &nbsp; &nbsp; ,  &nbsp; &nbsp; D  &nbsp; &nbsp; D &nbsp; &nbsp;   	P &nbsp; &nbsp; M &nbsp; &nbsp; P &nbsp; &nbsp;  , &nbsp; &nbsp;   	P &nbsp; &nbsp; M &nbsp; &nbsp; R &nbsp; &nbsp; G &nbsp; &nbsp;	,  &nbsp; &nbsp;R  &nbsp; &nbsp;S &nbsp; &nbsp; R &nbsp; &nbsp;   || &nbsp; &nbsp;N &nbsp; &nbsp;R&nbsp; &nbsp; S&nbsp; &nbsp; N&nbsp; &nbsp;    	,&nbsp; &nbsp;  S&nbsp; &nbsp; D&nbsp; &nbsp;  ,&nbsp; &nbsp;    |	&nbsp; &nbsp;,&nbsp; &nbsp; N&nbsp; &nbsp;  ,&nbsp; &nbsp; S&nbsp; &nbsp;   	,&nbsp; &nbsp; R&nbsp; &nbsp; ,&nbsp; &nbsp;  M&nbsp; &nbsp;  ||  (Palu)|\n\n \n\n \n\n
+                
+                
+                3. D&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp; M&nbsp; &nbsp;  	P&nbsp; &nbsp; R&nbsp; &nbsp; M&nbsp; &nbsp; P&nbsp; &nbsp;   	S &nbsp; &nbsp;R&nbsp; &nbsp; M&nbsp; &nbsp; P&nbsp; &nbsp; 	M&nbsp; &nbsp; R&nbsp; &nbsp; G&nbsp; &nbsp; R&nbsp; &nbsp; || &nbsp; &nbsp;S&nbsp; &nbsp; R&nbsp; &nbsp; N &nbsp; &nbsp;S &nbsp; &nbsp;   	D&nbsp; &nbsp; N&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp;   |	&nbsp; &nbsp;P&nbsp; &nbsp; D&nbsp; &nbsp; N&nbsp; &nbsp; S&nbsp; &nbsp; 	R&nbsp; &nbsp; M&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp; ||\n\n
+                
+                S&nbsp; &nbsp; R&nbsp; &nbsp; M&nbsp; &nbsp; P&nbsp; &nbsp;   	D &nbsp; &nbsp;M&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp;  	N &nbsp; &nbsp;S &nbsp; &nbsp;P&nbsp; &nbsp; D&nbsp; &nbsp; 	N&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; N&nbsp; &nbsp;  | &nbsp; &nbsp;G&nbsp; &nbsp; R&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp;   	N &nbsp; &nbsp;R&nbsp; &nbsp; S&nbsp; &nbsp; N&nbsp; &nbsp;   |	&nbsp; &nbsp;S&nbsp; &nbsp; D&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp; 	M&nbsp; &nbsp; P&nbsp; &nbsp; R&nbsp; &nbsp; M&nbsp; &nbsp; ||   (Palu)|\n\n \n\n \n\n
+                
+                
+                4. D &nbsp; &nbsp;N&nbsp; &nbsp; S&nbsp; &nbsp; P&nbsp; &nbsp;          , &nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp; P&nbsp; &nbsp;     	M&nbsp; &nbsp; R&nbsp; &nbsp; G&nbsp; &nbsp; G&nbsp; &nbsp;      R&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; N&nbsp; &nbsp; || &nbsp; &nbsp;S &nbsp; &nbsp;, &nbsp; &nbsp;  , &nbsp; &nbsp; D &nbsp; &nbsp;     	D&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp; N&nbsp; &nbsp;   |	 &nbsp; &nbsp;S &nbsp; &nbsp;N&nbsp; &nbsp; ,&nbsp; &nbsp; S&nbsp; &nbsp;   	  R&nbsp; &nbsp; ,&nbsp; &nbsp; M&nbsp; &nbsp; P&nbsp; &nbsp;   ||\n\n
+                
+                D &nbsp; &nbsp;,&nbsp; &nbsp;  N&nbsp; &nbsp;  S&nbsp; &nbsp;     	R&nbsp; &nbsp; S&nbsp; &nbsp; N&nbsp; &nbsp;  ,&nbsp; &nbsp;     	,&nbsp; &nbsp;  S&nbsp; &nbsp; D&nbsp; &nbsp; P&nbsp; &nbsp; 	   M&nbsp; &nbsp; D&nbsp; &nbsp; P&nbsp; &nbsp; M&nbsp; &nbsp; ||&nbsp; &nbsp;G  &nbsp; &nbsp;,&nbsp; &nbsp;  R&nbsp; &nbsp; R&nbsp; &nbsp;      	S&nbsp; &nbsp;  ,&nbsp; &nbsp;  N&nbsp; &nbsp; S&nbsp; &nbsp;    |	&nbsp; &nbsp;R &nbsp; &nbsp;M &nbsp; &nbsp;P&nbsp; &nbsp;M &nbsp; &nbsp;     &nbsp; &nbsp;P&nbsp; &nbsp;  ,&nbsp; &nbsp;  ,&nbsp; &nbsp;   ,&nbsp; &nbsp;   ||\n\n
+                
+                D&nbsp; &nbsp; P&nbsp; &nbsp; M&nbsp; &nbsp; R&nbsp; &nbsp;      	G &nbsp; &nbsp;R&nbsp; &nbsp; S&nbsp; &nbsp;  ,&nbsp; &nbsp;    	R &nbsp; &nbsp;M&nbsp; &nbsp; P&nbsp; &nbsp; R&nbsp; &nbsp;   	,&nbsp; &nbsp;  M&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp;  || &nbsp; &nbsp; M &nbsp; &nbsp; ,&nbsp; &nbsp;  P&nbsp; &nbsp; D &nbsp; &nbsp;     	N&nbsp; &nbsp; S&nbsp; &nbsp; P&nbsp; &nbsp;  ,&nbsp; &nbsp;   | 	D&nbsp; &nbsp; N&nbsp; &nbsp;  S&nbsp; &nbsp; R&nbsp; &nbsp;      N&nbsp; &nbsp;  ,&nbsp; &nbsp;  S&nbsp; &nbsp; R&nbsp; &nbsp;  ||\n\n
+                
+                G &nbsp; &nbsp; ,&nbsp; &nbsp;   G&nbsp; &nbsp; ,&nbsp; &nbsp;      	R&nbsp; &nbsp; S&nbsp; &nbsp; N&nbsp; &nbsp;  ,&nbsp; &nbsp;    	N&nbsp; &nbsp;  ,&nbsp; &nbsp;   D &nbsp; &nbsp;P &nbsp; &nbsp; 	D&nbsp; &nbsp; N&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp;  ||   &nbsp; &nbsp;N &nbsp; &nbsp; ,&nbsp; &nbsp;  S&nbsp; &nbsp; P&nbsp; &nbsp;       	, &nbsp; &nbsp; D &nbsp; &nbsp;M &nbsp; &nbsp;, &nbsp; &nbsp;  | 	&nbsp; &nbsp;P &nbsp; &nbsp;R &nbsp; &nbsp;, &nbsp; &nbsp; M&nbsp; &nbsp;    	S &nbsp; &nbsp; ,&nbsp; &nbsp;  R&nbsp; &nbsp; M&nbsp; &nbsp; |  (Palu)''')
 
 
 hi1, hi2 = st.columns(2)
@@ -464,259 +384,7 @@ with hi2:
         st.markdown(f"**{fact[0]}**: {fact[1]}")
 
 
-SG
-You said:
-do this exacT STRucture for kalyani:
-        hi1, hi2 = st.columns(2)
-        with hi1:
-	        st.title("This song is in the ragam: Shankharabharanam")
-	
-	
-	        st.write(''' **Arohana**: S R₂ G₃ M₁ P D₂ N₃ Ṡ   
-	                    **Avarohana**: Ṡ N₃ D₂ P M₁ G₃ R₂ S''')
-	        
-	        st.markdown("""
-	    	**Notes of Shankarabharanam:**
-	    	- **S** (Shadjam)
-	    	- **R₂** (Chatushruti Rishabham)
-	    	- **G₃** (Antara Gandharam)
-	    	- **M₁** (Shuddha Madhyamam)
-	    	- **P** (Paṅchamam)
-	    	- **D₂** (Chatushruti Dhaivatam)
-	    	- **N₃** (Kakali Nishadam)
-	    	""")
-	        # Title of the page
-	        st.title("Janya Ragas of Shankarabharanam")
-	
-	        # Display text with bullet points and emojis
-	        st.markdown("""
-	        Shankarabharanam has given rise to many Janya (derived) ragas, each bringing out different moods and interpretations. 
-	        Some well-known Janya ragas include:
-	        - 🎶 **Arabhi**
-	        - 🎶 **Atana**
-	        - 🎶 **Bilahari**
-	        - 🎶 **Devagaandhaari**
-	        - 🎶 **Jana Ranjani**
-	        - 🎶 **Hamsadhvani**
-	        - 🎶 **Kadanakutuhalam**
-	        - 🎶 **Niroshta**
-	        - 🎶 **Shuddha Sāveri**
-	        - 🎶 **Pahādi**
-	
-	        These Janya ragas add richness to the raga's expression, allowing for diverse musical exploration within the framework of Shankarabharanam.
-	        """)
-	        with st.form("my_form"):
-	            st.write("Feedback - Was I Right?")
-	            sentiment_mapping = [":material/thumb_down:", ":material/thumb_up:"]
-	            selected = st.feedback("thumbs")
-	            if selected is not None:
-	                st.markdown(f"You selected: {sentiment_mapping[selected]}")
-	            # Every form must have a submit button.
-	            submitted = st.form_submit_button("Submit")   
-	    
-                with hi2:
-                        st.image("spec.png")
-	
-                        st.title('Fun Facts About Shankarabharanam')
-	
-		        # Add an introductory text
-		        st.markdown("""
-		        Shankarabharanam is a majestic raga in Carnatic music, known for its grandeur and versatility. Here are some interesting facts about this raga:
-		        """)
-		
-		        # List of facts
-		        facts = [
-		            ("🧑‍🎤 **King of Ragas**", "Shankarabharanam is considered one of the most majestic and revered ragas in Carnatic music."),
-		            ("🎵 **Melakarta Raga**", "It is the 29th raga in the 72 Melakarta system and falls under the Indu Chakra."),
-		            ("🔢 **Sampurna Scale**", "Shankarabharanam uses all seven notes in both ascending and descending scales: S, R₂, G₃, M₁, P, D₂, N₃."),
-		            ("🎶 **Vadi and Samvadi**", "The Vadi (most important note) is P (Paṅchamam), and the Samvadi is S (Shadjam)."),
-		            ("🌅 **Time of Performance**", "Typically performed in the early evening, evoking serenity and devotion."),
-		            ("🎤 **Famous Compositions**", "Known for iconic compositions like 'Vatapi Ganapatim' by Muthuswami Dikshitar."),
-		            ("💎 **Name Meaning**", "Shankarabharanam translates to 'the ornament of Shankara' (Lord Shiva)."),
-		            ("🎶 **Hindustani Equivalent**", "The raga's counterpart in Hindustani music is Yaman, with a similar mood and structure."),
-		            ("🩷 **Emotional Range**", "Shankarabharanam expresses devotion, grandeur, and peacefulness, making it versatile for performances."),
-		            ("🎻 **Vocal and Instrumental**", "Popular in both vocal and instrumental renditions, especially in classical concerts.")
-		        ]
-		
-		        # Loop through the list and present each fact
-		        for fact in facts:
-		            st.markdown(f"**{fact[0]}**: {fact[1]}")
-		
-		    st.header("CHALAMELA")
-		 
-		    st.markdown('''Ragam: Durbar (22nd Mela Janyam)
-			Talam: Adi
-			 
-			Arohanam:          S R2 M1 P D2 N2 S            	||
-			Avarohanam:  	S N2 D2 P M1 R2 G2 G2 R2 S    	||
-			 
-			Composer:           Thiruvotriyur Thyagaiyyer
-			Notation Courtesy: Apoorva Raghunandan
-			 
-			Pallavi: ChalamEla jEsEvurA chAla nammina nApai
-			 
-			Anupallavi: Valachiyunna nAthO vAdEla VEnu gOpAla dEva
-			 
-			Charanam: Palukumu nAthO
-			 
-			Meaning: Lord Venugopala, why do you wreak a grudge on me? Please shower your Grace upon this one who has ardently believed in you.''')
-			 
-			 
-		    st.subheader("Pallavi:")
-			 
-		    st.markdown('''P &nbsp; &nbsp; M &nbsp; &nbsp; R &nbsp; &nbsp;,  &nbsp; &nbsp;    G &nbsp; &nbsp; , &nbsp; &nbsp;  G &nbsp; &nbsp; , &nbsp; &nbsp;       R &nbsp; &nbsp; S &nbsp; &nbsp; R &nbsp; &nbsp; , &nbsp; &nbsp;        N &nbsp; &nbsp; R &nbsp; &nbsp; S  &nbsp; &nbsp; N &nbsp; &nbsp; | D &nbsp; &nbsp; P &nbsp; &nbsp; D &nbsp; &nbsp; N &nbsp; &nbsp;  	S &nbsp; &nbsp; R &nbsp; &nbsp; S &nbsp; &nbsp; R  &nbsp; &nbsp; ||&nbsp; &nbsp;	P &nbsp; &nbsp; , &nbsp; &nbsp; M &nbsp; &nbsp; R  &nbsp; &nbsp;  	G &nbsp; &nbsp; R &nbsp; &nbsp; S &nbsp; &nbsp; R &nbsp; &nbsp; ||''')
-			                
-		    st.markdown('''Cha- &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;la - &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 	 &nbsp; &nbsp;     me-  &nbsp; &nbsp;   &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 	la -    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 	je &nbsp; &nbsp;-  &nbsp; &nbsp;-  &nbsp; &nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;se&nbsp; &nbsp; -    &nbsp; &nbsp;	- &nbsp; &nbsp; - &nbsp; &nbsp; - &nbsp; &nbsp; -  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;    	vu &nbsp; &nbsp; -&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;- &nbsp; &nbsp;ra &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;    	- &nbsp; &nbsp; - &nbsp; &nbsp; - &nbsp; &nbsp; -&nbsp; &nbsp;|\n\n''')
-			 
-			 
-		    st.markdown('''P &nbsp; &nbsp; M  &nbsp; &nbsp; R &nbsp; &nbsp;G  &nbsp; &nbsp;	R &nbsp; &nbsp;S &nbsp; &nbsp;R&nbsp; &nbsp; M &nbsp; &nbsp; || &nbsp; &nbsp;  P &nbsp; &nbsp;M&nbsp; &nbsp; , &nbsp; &nbsp;P  &nbsp; &nbsp;   	D&nbsp; &nbsp; N&nbsp; &nbsp; S&nbsp; &nbsp; R &nbsp; &nbsp;|| &nbsp; &nbsp;N&nbsp; &nbsp; N &nbsp; &nbsp;, &nbsp; &nbsp; D  &nbsp; &nbsp; 	D&nbsp; &nbsp; P &nbsp; &nbsp;D&nbsp; &nbsp; N &nbsp; &nbsp; | &nbsp; &nbsp; P &nbsp; &nbsp; M &nbsp; &nbsp;R &nbsp; &nbsp;G   &nbsp; &nbsp; 	G &nbsp; &nbsp;R &nbsp; &nbsp;S &nbsp; &nbsp;R &nbsp; &nbsp;||\n\n''')
-		    st.markdown('''Cha  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;- -  &nbsp; &nbsp;&nbsp; &nbsp; -   	-   &nbsp; &nbsp;&nbsp; &nbsp;- la -   &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;      - nam - -    &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;	-  -   -  -| &nbsp; &nbsp;&nbsp; &nbsp;Mi -  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;- na    &nbsp; &nbsp;&nbsp; &nbsp;	- &nbsp; &nbsp;&nbsp; &nbsp;  -  na -  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 	-  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; -  -  -      	pai  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;- - - &nbsp; &nbsp;&nbsp; &nbsp;|\n\n''')
-			 
-		    st.subheader("Anupallavi:")
-			
-			 
-		    st.markdown('''D&nbsp; &nbsp; N&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp;   	M&nbsp; &nbsp; P&nbsp; &nbsp; R&nbsp; &nbsp; M&nbsp; &nbsp;  	R&nbsp; &nbsp; P&nbsp; &nbsp; M&nbsp; &nbsp; R&nbsp; &nbsp;   	G &nbsp; &nbsp;G &nbsp; &nbsp;R&nbsp; &nbsp; S&nbsp; &nbsp; ||&nbsp; &nbsp;M&nbsp; &nbsp; M&nbsp; &nbsp; R&nbsp; &nbsp; P&nbsp; &nbsp;   	P&nbsp; &nbsp; M&nbsp; &nbsp; D&nbsp; &nbsp; D&nbsp; &nbsp;   |  &nbsp; &nbsp; P&nbsp; &nbsp; M&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp;    	N &nbsp; &nbsp;N &nbsp; &nbsp;S&nbsp; &nbsp;  , &nbsp; &nbsp;||\n\n''')
-		    st.markdown('''Va- &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;-   -     	-  -  &nbsp; &nbsp;&nbsp; &nbsp;  la -    &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;	-   -  -  -    	chi - &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; -   -|  &nbsp; &nbsp;&nbsp; &nbsp;yu -  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  -   -   	-   &nbsp; &nbsp;&nbsp; &nbsp; -  na -  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  	-  na -  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  -     	 &nbsp; &nbsp;&nbsp; &nbsp;tho -  &nbsp; &nbsp;&nbsp; &nbsp;- &nbsp; &nbsp;&nbsp; &nbsp; - &nbsp; &nbsp;&nbsp; &nbsp;|\n\n''')
-			 
-		    st.markdown('''P&nbsp; &nbsp; D&nbsp; &nbsp; P&nbsp; &nbsp; S&nbsp; &nbsp;          N&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; S&nbsp; &nbsp;   	R &nbsp; &nbsp;G&nbsp; &nbsp; G&nbsp; &nbsp; R&nbsp; &nbsp;    	S&nbsp; &nbsp; N&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; ||&nbsp; &nbsp;S &nbsp; &nbsp; ,&nbsp; &nbsp;   ,&nbsp; &nbsp;   P&nbsp; &nbsp;     	, &nbsp; &nbsp;  , &nbsp; &nbsp;  D&nbsp; &nbsp; N&nbsp; &nbsp;  |   &nbsp; &nbsp;P&nbsp; &nbsp; M&nbsp; &nbsp; R&nbsp; &nbsp; G&nbsp; &nbsp;    	G&nbsp; &nbsp; R&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; ||\n\n''')
-		    st.markdown('''Va &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; -  pa  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  	-    -   la -   &nbsp; &nbsp;&nbsp; &nbsp; 	-    -  &nbsp; &nbsp;&nbsp; &nbsp; de -   &nbsp; &nbsp;&nbsp; &nbsp;   	- va  &nbsp; &nbsp;&nbsp; &nbsp;-  - &nbsp; &nbsp;&nbsp; &nbsp;|\n\n''')
-			
-		    st.subheader("Mukthayi Swaram:")
-			
-			 
-		    st.markdown('''P &nbsp; &nbsp;M&nbsp; &nbsp; R&nbsp; &nbsp; G&nbsp; &nbsp;    	R &nbsp; &nbsp;S&nbsp; &nbsp; N&nbsp; &nbsp; R&nbsp; &nbsp;  	 S&nbsp; &nbsp; R&nbsp; &nbsp; N&nbsp; &nbsp; S&nbsp; &nbsp;  	  D &nbsp; &nbsp;P&nbsp; &nbsp; D&nbsp; &nbsp; N&nbsp; &nbsp; ||\n\n S&nbsp; &nbsp; R&nbsp; &nbsp; S&nbsp; &nbsp; M&nbsp; &nbsp;      	R &nbsp; &nbsp;P&nbsp; &nbsp; M&nbsp; &nbsp; D&nbsp; &nbsp;  |	&nbsp; &nbsp;P &nbsp; &nbsp;D&nbsp; &nbsp; M&nbsp; &nbsp; &nbsp; &nbsp;P&nbsp; &nbsp;   	D N S ,  ||\n\n''')
-			 
-			
-		    st.markdown('''D&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp; N&nbsp; &nbsp;       S &nbsp; &nbsp; ,&nbsp; &nbsp;  R&nbsp; &nbsp; S&nbsp; &nbsp;   	R&nbsp; &nbsp; G&nbsp; &nbsp; G&nbsp; &nbsp; R&nbsp; &nbsp;  	S&nbsp; &nbsp; R&nbsp; &nbsp; N&nbsp; &nbsp; ,&nbsp; &nbsp;  ||\n\n D&nbsp; &nbsp;  P&nbsp; &nbsp;   S&nbsp; &nbsp;  S&nbsp; &nbsp;        	&nbsp; &nbsp; , &nbsp; &nbsp;  P &nbsp; &nbsp;  P&nbsp; &nbsp;   ,&nbsp; &nbsp;    |&nbsp; &nbsp; 	D&nbsp; &nbsp;  P &nbsp; &nbsp; M &nbsp; &nbsp; R&nbsp; &nbsp;    	G&nbsp; &nbsp;  R&nbsp; &nbsp;  S&nbsp; &nbsp;  R&nbsp; &nbsp;   || (Cha)|\n\n''')
-			 
-			
-			 
-			 
-		    st.subheader("Charanam:")
-			 
-		    st.markdown('''P&nbsp; &nbsp;  ,&nbsp; &nbsp;   P&nbsp; &nbsp; ,&nbsp; &nbsp;     	,&nbsp; &nbsp;  D&nbsp; &nbsp; P &nbsp; &nbsp;M&nbsp; &nbsp;       	P&nbsp; &nbsp; D&nbsp; &nbsp; ,&nbsp; &nbsp;  P&nbsp; &nbsp;   	D&nbsp; &nbsp; ,&nbsp; &nbsp;  D&nbsp; &nbsp; R&nbsp; &nbsp;  ||&nbsp; &nbsp;N &nbsp; &nbsp; ,&nbsp; &nbsp; N&nbsp; &nbsp;  ,&nbsp; &nbsp;     	D&nbsp; &nbsp; ,&nbsp; &nbsp;   P&nbsp; &nbsp;  ,&nbsp; &nbsp;    |   	&nbsp; &nbsp;M &nbsp; &nbsp;R &nbsp; &nbsp;G &nbsp; &nbsp;, &nbsp; &nbsp;  	R&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; M&nbsp; &nbsp; ||   |\n\n''')
-		    st.markdown('''Pa -&nbsp;&nbsp;&nbsp; &nbsp;  &nbsp;  lu -  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 	&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;- &nbsp;&nbsp; ku - &nbsp;&nbsp;&nbsp; -   &nbsp;&nbsp;     &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;	-  &nbsp;&nbsp;&nbsp; -  -&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; -    &nbsp;&nbsp;&nbsp;&nbsp;	&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;-  -   -  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;-&nbsp;&nbsp;|&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Mu -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - -  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;    &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;	- &nbsp;&nbsp; - &nbsp;  -  -  &nbsp;&nbsp;      &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;	na - &nbsp;&nbsp; - &nbsp;&nbsp; -   &nbsp;&nbsp;&nbsp;	tho&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; -&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;- &nbsp; -&nbsp;&nbsp;|\n\n''')
-			 
-		    st.subheader("Chittai Swaram:")
-			 
-		    st.markdown('''1.  P &nbsp; &nbsp; ,&nbsp; &nbsp;   ,&nbsp; &nbsp;  ,&nbsp; &nbsp;  	  ,&nbsp; &nbsp;   ,&nbsp; &nbsp;   D &nbsp; &nbsp;, &nbsp; &nbsp; 	,&nbsp; &nbsp;   , &nbsp; &nbsp; P&nbsp; &nbsp;  ,&nbsp; &nbsp;      M &nbsp; &nbsp; , &nbsp; &nbsp; R &nbsp; &nbsp; ,&nbsp; &nbsp; || &nbsp; &nbsp;G  &nbsp; &nbsp; , &nbsp; &nbsp;   , &nbsp; &nbsp;   , &nbsp; &nbsp;  	R &nbsp; &nbsp;   , &nbsp; &nbsp;  , &nbsp; &nbsp;   , &nbsp; &nbsp;  |	 &nbsp; &nbsp;S  &nbsp; &nbsp; , &nbsp; &nbsp;   ,  &nbsp; &nbsp;  , &nbsp; &nbsp;  	R &nbsp; &nbsp; ,  &nbsp; &nbsp; M &nbsp; &nbsp; , &nbsp; &nbsp; ||  (Palu)|\n\n \n\n \n\n
-			 
-			 
-			2. P  &nbsp; &nbsp; ,  &nbsp; &nbsp; D  &nbsp; &nbsp; D &nbsp; &nbsp;   	P &nbsp; &nbsp; M &nbsp; &nbsp; P &nbsp; &nbsp;  , &nbsp; &nbsp;   	P &nbsp; &nbsp; M &nbsp; &nbsp; R &nbsp; &nbsp; G &nbsp; &nbsp;	,  &nbsp; &nbsp;R  &nbsp; &nbsp;S &nbsp; &nbsp; R &nbsp; &nbsp;   || &nbsp; &nbsp;N &nbsp; &nbsp;R&nbsp; &nbsp; S&nbsp; &nbsp; N&nbsp; &nbsp;    	,&nbsp; &nbsp;  S&nbsp; &nbsp; D&nbsp; &nbsp;  ,&nbsp; &nbsp;    |	&nbsp; &nbsp;,&nbsp; &nbsp; N&nbsp; &nbsp;  ,&nbsp; &nbsp; S&nbsp; &nbsp;   	,&nbsp; &nbsp; R&nbsp; &nbsp; ,&nbsp; &nbsp;  M&nbsp; &nbsp;  ||  (Palu)|\n\n \n\n \n\n
-			 
-			 
-			3. D&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp; M&nbsp; &nbsp;  	P&nbsp; &nbsp; R&nbsp; &nbsp; M&nbsp; &nbsp; P&nbsp; &nbsp;   	S &nbsp; &nbsp;R&nbsp; &nbsp; M&nbsp; &nbsp; P&nbsp; &nbsp; 	M&nbsp; &nbsp; R&nbsp; &nbsp; G&nbsp; &nbsp; R&nbsp; &nbsp; || &nbsp; &nbsp;S&nbsp; &nbsp; R&nbsp; &nbsp; N &nbsp; &nbsp;S &nbsp; &nbsp;   	D&nbsp; &nbsp; N&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp;   |	&nbsp; &nbsp;P&nbsp; &nbsp; D&nbsp; &nbsp; N&nbsp; &nbsp; S&nbsp; &nbsp; 	R&nbsp; &nbsp; M&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp; ||\n\n
-			 
-			S&nbsp; &nbsp; R&nbsp; &nbsp; M&nbsp; &nbsp; P&nbsp; &nbsp;   	D &nbsp; &nbsp;M&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp;  	N &nbsp; &nbsp;S &nbsp; &nbsp;P&nbsp; &nbsp; D&nbsp; &nbsp; 	N&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; N&nbsp; &nbsp;  | &nbsp; &nbsp;G&nbsp; &nbsp; R&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp;   	N &nbsp; &nbsp;R&nbsp; &nbsp; S&nbsp; &nbsp; N&nbsp; &nbsp;   |	&nbsp; &nbsp;S&nbsp; &nbsp; D&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp; 	M&nbsp; &nbsp; P&nbsp; &nbsp; R&nbsp; &nbsp; M&nbsp; &nbsp; ||   (Palu)|\n\n \n\n \n\n
-			 
-			 
-			4. D &nbsp; &nbsp;N&nbsp; &nbsp; S&nbsp; &nbsp; P&nbsp; &nbsp;          , &nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp; P&nbsp; &nbsp;     	M&nbsp; &nbsp; R&nbsp; &nbsp; G&nbsp; &nbsp; G&nbsp; &nbsp;      R&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp; N&nbsp; &nbsp; || &nbsp; &nbsp;S &nbsp; &nbsp;, &nbsp; &nbsp;  , &nbsp; &nbsp; D &nbsp; &nbsp;     	D&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp; N&nbsp; &nbsp;   |	 &nbsp; &nbsp;S &nbsp; &nbsp;N&nbsp; &nbsp; ,&nbsp; &nbsp; S&nbsp; &nbsp;   	  R&nbsp; &nbsp; ,&nbsp; &nbsp; M&nbsp; &nbsp; P&nbsp; &nbsp;   ||\n\n
-			 
-			 D &nbsp; &nbsp;,&nbsp; &nbsp;  N&nbsp; &nbsp;  S&nbsp; &nbsp;     	R&nbsp; &nbsp; S&nbsp; &nbsp; N&nbsp; &nbsp;  ,&nbsp; &nbsp;     	,&nbsp; &nbsp;  S&nbsp; &nbsp; D&nbsp; &nbsp; P&nbsp; &nbsp; 	   M&nbsp; &nbsp; D&nbsp; &nbsp; P&nbsp; &nbsp; M&nbsp; &nbsp; ||&nbsp; &nbsp;G  &nbsp; &nbsp;,&nbsp; &nbsp;  R&nbsp; &nbsp; R&nbsp; &nbsp;      	S&nbsp; &nbsp;  ,&nbsp; &nbsp;  N&nbsp; &nbsp; S&nbsp; &nbsp;    |	&nbsp; &nbsp;R &nbsp; &nbsp;M &nbsp; &nbsp;P&nbsp; &nbsp;M &nbsp; &nbsp;     &nbsp; &nbsp;P&nbsp; &nbsp;  ,&nbsp; &nbsp;  ,&nbsp; &nbsp;   ,&nbsp; &nbsp;   ||\n\n
-			 
-			 D&nbsp; &nbsp; P&nbsp; &nbsp; M&nbsp; &nbsp; R&nbsp; &nbsp;      	G &nbsp; &nbsp;R&nbsp; &nbsp; S&nbsp; &nbsp;  ,&nbsp; &nbsp;    	R &nbsp; &nbsp;M&nbsp; &nbsp; P&nbsp; &nbsp; R&nbsp; &nbsp;   	,&nbsp; &nbsp;  M&nbsp; &nbsp; P&nbsp; &nbsp; D&nbsp; &nbsp;  || &nbsp; &nbsp; M &nbsp; &nbsp; ,&nbsp; &nbsp;  P&nbsp; &nbsp; D &nbsp; &nbsp;     	N&nbsp; &nbsp; S&nbsp; &nbsp; P&nbsp; &nbsp;  ,&nbsp; &nbsp;   | 	D&nbsp; &nbsp; N&nbsp; &nbsp;  S&nbsp; &nbsp; R&nbsp; &nbsp;      N&nbsp; &nbsp;  ,&nbsp; &nbsp;  S&nbsp; &nbsp; R&nbsp; &nbsp;  ||\n\n
-			 
-			G &nbsp; &nbsp; ,&nbsp; &nbsp;   G&nbsp; &nbsp; ,&nbsp; &nbsp;      	R&nbsp; &nbsp; S&nbsp; &nbsp; N&nbsp; &nbsp;  ,&nbsp; &nbsp;    	N&nbsp; &nbsp;  ,&nbsp; &nbsp;   D &nbsp; &nbsp;P &nbsp; &nbsp; 	D&nbsp; &nbsp; N&nbsp; &nbsp; S&nbsp; &nbsp; R&nbsp; &nbsp;  ||   &nbsp; &nbsp;N &nbsp; &nbsp; ,&nbsp; &nbsp;  S&nbsp; &nbsp; P&nbsp; &nbsp;       	, &nbsp; &nbsp; D &nbsp; &nbsp;M &nbsp; &nbsp;, &nbsp; &nbsp;  | 	&nbsp; &nbsp;P &nbsp; &nbsp;R &nbsp; &nbsp;, &nbsp; &nbsp; M&nbsp; &nbsp;    	S &nbsp; &nbsp; ,&nbsp; &nbsp;  R&nbsp; &nbsp; M&nbsp; &nbsp; |  (Palu)''')
 
-hi1, hi2 = st.columns(2)
-
-with hi1:
-    st.title("This song is in the ragam: Kalyani")
-    
-    st.write(''' **Arohana**: S R₂ G₃ M₂ P D₂ N₃ Ṡ  
-                **Avarohana**: Ṡ N₃ D₂ P M₂ G₃ R₂ S''')
-    
-    st.markdown("""
-    **Notes of Kalyani:**
-    - **S** (Shadjam)
-    - **R₂** (Chatushruti Rishabham)
-    - **G₃** (Antara Gandharam)
-    - **M₂** (Prati Madhyamam)
-    - **P** (Paṅchamam)
-    - **D₂** (Chatushruti Dhaivatam)
-    - **N₃** (Kakali Nishadam)
-    """)
-    
-    # Title for Janya Ragas
-    st.title("Janya Ragas of Kalyani")
-    
-    st.markdown("""
-    Kalyani has inspired several beautiful Janya (derived) ragas, each bringing unique flavors and expressions. Some well-known Janya ragas include:
-    - 🎶 **Hamirkalyani**
-    - 🎶 **Mohanakalyani**
-    - 🎶 **Yaman**
-    - 🎶 **Vasantha Bhairavi**
-    - 🎶 **Sunadavinodini**
-    - 🎶 **Saranga**
-    - 🎶 **Amritavarshini**
-    
-    These ragas extend the expressive potential of Kalyani, making it one of the most versatile and widely used ragas.
-    """)
-    
-    with st.form("feedback_form"):
-        st.write("Feedback - Did you enjoy learning about Kalyani?")
-        sentiment_mapping = [":thumbs_down:", ":thumbs_up:"]
-        selected = st.radio("Give us your feedback", options=["Dislike", "Like"])
-        if selected:
-            st.markdown(f"You selected: {selected}")
-        submitted = st.form_submit_button("Submit")
-
-with hi2:
-    st.image("spec.png")
-    
-    st.title("Fun Facts About Kalyani")
-    
-    st.markdown("""
-    Kalyani is one of the most prominent and majestic ragas in Carnatic music. Here are some interesting facts about Kalyani:
-    """)
-    
-    facts = [
-        ("🎵 **Melakarta Raga**", "Kalyani is the 65th raga in the 72 Melakarta system."),
-        ("🌌 **Sampurna Raga**", "It uses all seven swaras in both ascending and descending orders."),
-        ("🎤 **Famous Compositions**", "Iconic kritis include 'Amba Kamakshi' by Shyama Sastri and 'Nidhi Chala Sukhama' by Tyagaraja."),
-        ("🌅 **Time of Performance**", "Typically sung during the evening."),
-        ("💎 **Name Meaning**", "Kalyani translates to 'auspicious' or 'blissful.'"),
-        ("🎻 **Widely Adapted**", "It has an equivalent in Hindustani music, Yaman, which shares similar melodic structures."),
-    ]
-    
-    for fact in facts:
-        st.markdown(f"**{fact[0]}**: {fact[1]}")
-    
-# Title for song
-st.header("Vasudevayani")
-
-# Song details with swaras spaced
-st.markdown("""
-**Ragam**: Kalyani (65th Melakarta)  
-**Talam**: Adi  
-**Composer**: Tyagaraja  
-
-**Arohanam**: S  R₂  G₃  M₂  P  D₂  N₃  Ṡ  
-**Avarohanam**: Ṡ  N₃  D₂  P  M₂  G₃  R₂  S  
-
----
-
-### Pallavi:  
-Vā &nbsp;&nbsp; su &nbsp;&nbsp; de &nbsp;&nbsp; vā &nbsp;&nbsp; ya &nbsp;&nbsp; ni  
-
-S &nbsp;&nbsp; R₂ &nbsp;&nbsp; G₃ &nbsp;&nbsp; M₂ &nbsp;&nbsp; P &nbsp;&nbsp; D₂ &nbsp;&nbsp; N₃ &nbsp;&nbsp; Ṡ  
-
----
-
-### Anupallavi:  
-Na &nbsp;&nbsp; rā &nbsp;&nbsp; ya &nbsp;&nbsp; ṇā &nbsp;&nbsp; nu  
-
-Ṡ &nbsp;&nbsp; N₃ &nbsp;&nbsp; D₂ &nbsp;&nbsp; P &nbsp;&nbsp; M₂ &nbsp;&nbsp; G₃ &nbsp;&nbsp; R₂ &nbsp;&nbsp; S  
-
----
-
-### Charanam:  
-Vā &nbsp;&nbsp; su &nbsp;&nbsp; de &nbsp;&nbsp; vā &nbsp;&nbsp; ya &nbsp;&nbsp; ni  
-Na &nbsp;&nbsp; rā &nbsp;&nbsp; ya &nbsp;&nbsp; ṇā &nbsp;&nbsp; nu  
-
-S &nbsp;&nbsp; R₂ &nbsp;&nbsp; G₃ &nbsp;&nbsp; M₂ &nbsp;&nbsp; P &nbsp;&nbsp; D₂ &nbsp;&nbsp; N₃ &nbsp;&nbsp; Ṡ  
-Ṡ &nbsp;&nbsp; N₃ &nbsp;&nbsp; D₂ &nbsp;&nbsp; P &nbsp;&nbsp; M₂ &nbsp;&nbsp; G₃ &nbsp;&nbsp; R₂ &nbsp;&nbsp; S  
-""")
 #about me
 with tab4:
     def get_base64_of_bin_file(bin_file):
