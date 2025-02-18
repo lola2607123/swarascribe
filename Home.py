@@ -315,7 +315,7 @@ with hi1:
     st.title("This song is in the ragam: Kalyani")
 
     st.write(''' **Arohana**: S R₂ G₃ M₂ P D₂ N₃ Ṡ  
-                 **Avarohana**: Ṡ N₃ D₂ P M₂ G₃ R₂ S''')
+		 **Avarohana**: Ṡ N₃ D₂ P M₂ G₃ R₂ S''')
     
     st.markdown("""
     **Notes of Kalyani:**
@@ -348,13 +348,13 @@ with hi1:
     """)
 
     with st.form("my_form"):
-        st.write("Feedback - Was I Right?")
-        sentiment_mapping = [":material/thumb_down:", ":material/thumb_up:"]
-        selected = st.feedback("thumbs")
-        if selected is not None:
-            st.markdown(f"You selected: {sentiment_mapping[selected]}")
-        # Every form must have a submit button.
-        submitted = st.form_submit_button("Submit")
+	st.write("Feedback - Was I Right?")
+	sentiment_mapping = [":material/thumb_down:", ":material/thumb_up:"]
+	selected = st.feedback("thumbs")
+	if selected is not None:
+	    st.markdown(f"You selected: {sentiment_mapping[selected]}")
+	# Every form must have a submit button.
+	submitted = st.form_submit_button("Submit")
 
 with hi2:
     st.image("spec.png")
@@ -368,20 +368,20 @@ with hi2:
 
     # List of facts
     facts = [
-        ("🎵 **Melakarta Raga**", "It is the 65th raga in the 72 Melakarta system and belongs to the Prathi Madhyama group."),
-        ("🔢 **Sampurna Scale**", "Kalyani employs all seven notes in both ascending and descending scales: S, R₂, G₃, M₂, P, D₂, N₃."),
-        ("🎶 **Vadi and Samvadi**", "The Vadi (most important note) is G₃ (Antara Gandharam), and the Samvadi is N₃ (Kakali Nishadam)."),
-        ("🌅 **Time of Performance**", "Typically performed in the evening, evoking devotion and joy."),
-        ("🎤 **Famous Compositions**", "Kalyani is known for iconic compositions like 'Nidhi Chala Sukhama' by Tyagaraja."),
-        ("💎 **Name Meaning**", "Kalyani translates to 'auspicious' or 'beneficent.'"),
-        ("🎶 **Hindustani Equivalent**", "The raga's counterpart in Hindustani music is Yaman."),
-        ("🩷 **Emotional Range**", "Kalyani conveys grandeur, devotion, and serenity."),
-        ("🎻 **Vocal and Instrumental**", "Popular in both vocal and instrumental renditions, showcasing its adaptability."),
+	("🎵 **Melakarta Raga**", "It is the 65th raga in the 72 Melakarta system and belongs to the Prathi Madhyama group."),
+	("🔢 **Sampurna Scale**", "Kalyani employs all seven notes in both ascending and descending scales: S, R₂, G₃, M₂, P, D₂, N₃."),
+	("🎶 **Vadi and Samvadi**", "The Vadi (most important note) is G₃ (Antara Gandharam), and the Samvadi is N₃ (Kakali Nishadam)."),
+	("🌅 **Time of Performance**", "Typically performed in the evening, evoking devotion and joy."),
+	("🎤 **Famous Compositions**", "Kalyani is known for iconic compositions like 'Nidhi Chala Sukhama' by Tyagaraja."),
+	("💎 **Name Meaning**", "Kalyani translates to 'auspicious' or 'beneficent.'"),
+	("🎶 **Hindustani Equivalent**", "The raga's counterpart in Hindustani music is Yaman."),
+	("🩷 **Emotional Range**", "Kalyani conveys grandeur, devotion, and serenity."),
+	("🎻 **Vocal and Instrumental**", "Popular in both vocal and instrumental renditions, showcasing its adaptability."),
     ]
 
     # Loop through the list and present each fact
     for fact in facts:
-        st.markdown(f"**{fact[0]}**: {fact[1]}")
+	st.markdown(f"**{fact[0]}**: {fact[1]}")
 
 
 
